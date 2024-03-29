@@ -22,7 +22,7 @@ current_year = datetime.now().year
 
 # -- Project information -----------------------------------------------------
 
-project = 'us4R™ User Manual'
+project = 'us4R-lite™ User Manual'
 copyright = f"{current_year}, us4us Ltd"
 author = 'us4us Ltd'
 
