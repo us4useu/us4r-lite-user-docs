@@ -8,7 +8,7 @@
 
 -   Power consumption (average) 300W
 
--   Power consumption (max) 1200W (max power of the us4R power supply)
+-   Power consumption (max) 1200W (max power of the us4R-lite power supply)
 
 -   Product Dimensions (DxWxH) [mm]: 264 x 445 × 154\* mm
 
@@ -20,7 +20,7 @@
 
 ## Basic Composition
 
--   the **us4R™** device (with probe adapter)
+-   the **us4R-lite™** device (with probe adapter)
 
 -   4 or 8 PCIe cable
 

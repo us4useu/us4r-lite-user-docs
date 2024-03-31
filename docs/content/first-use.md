@@ -2,22 +2,22 @@
 
 :::{CAUTION}
 Never unplug the probe from the device during transmission!
-This can result in damage to the transmission unit of the us4R™.
+This can result in damage to the transmission unit of the us4R-lite™.
 :::
 
 
-Before first use of the **us4R™**, you must ensure that:
+Before first use of the **us4R-lite™**, you must ensure that:
 
 -   the device has been set up according to Manufacturer guidelines
     found in section {numref}`Section %s <set-up/System setup>`,
 
 -   proper probe adapter has been installed,
 
--   an external host PC and monitor have been connected to the **us4R™**.
+-   an external host PC and monitor have been connected to the **us4R-lite™**.
 
 Step-by-step instruction:
 
-1.  Connect the mains to the **us4R™** and turn the *Power Switch* on.
+1.  Connect the mains to the **us4R-lite™** and turn the *Power Switch* on.
 
 2.  Now, turn on the device by clicking the ON/OFF button.
 
@@ -60,7 +60,7 @@ The host PC: the PCIe card interface with four connected PCIe cables and the PCI
 10. The host PC can now be turned off by shutting down the Windows
     system as normal.
 
-11. Turn off the **us4R™** by pressing the ON/OFF button.
+11. Turn off the **us4R-lite™** by pressing the ON/OFF button.
 
 12. After 5 seconds turn off the Power Switch.
 
