@@ -10,9 +10,9 @@ The us4R-lite™ system is available in two interface versions:
 
 Available ARRUS™ SDK is to be installed and run on the host PC to execute  User’s applications/scripting for configure the device, acquire data, and perform custom processing.
 
-![Peripheral mode with external Host PC connected through Thunderbolt RL-2020 model](img/peripheral.png)
+![Peripheral mode with external Host PC connected through Thunderbolt RL-2020 model](img/peripheral-notebook.png)
 
-![Peripheral mode with external Host PC connected through PCIe RL-2021 mode](img/peripheral_pc.png)
+![Peripheral mode with external Host PC connected through PCIe RL-2021 mode](img/peripheral-desktop.png)
 
 UPDATE!
 
