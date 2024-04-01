@@ -17,7 +17,7 @@ us4R-lite™ User Manual
    content/first-use
    content/manufacturer-guidelines
    content/tech-spec
-   content/legend-of-symbols
+   content/legend-symbols
    content/current-limitations
    content/warranty
    content/version-history
