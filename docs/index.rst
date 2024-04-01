@@ -12,12 +12,12 @@ us4R-lite™ User Manual
 
    content/intended-use
    content/alara
-   content/set-up
+   content/setup
    content/hardware
    content/first-use
-   content/manufacturer_guidelines
-   content/technical_specification
-   content/legend_of_symbols
-   content/current_limitations
+   content/manufacturer-guidelines
+   content/tech-spec
+   content/legend-of-symbols
+   content/current-limitations
    content/warranty
-   content/version_history
+   content/version-history
