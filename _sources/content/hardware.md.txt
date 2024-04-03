@@ -10,19 +10,19 @@ Before first use, you must ensure that the device is complete and in good condit
 :::
 
 :::{Attention}
-Using the us4R™ out of its intended use, or any use that has not been delineated in this manual, will lower the effectiveness of measures put in place to protect the user from danger, and result in a decrease of safety levels.
+Using the us4R-lite™ out of its intended use, or any use that has not been delineated in this manual, will lower the effectiveness of measures put in place to protect the user from danger, and result in a decrease of safety levels.
 :::
   
-The ready to use setup consists of the **us4R™** device, a host PC computer ({numref}`us4r+pc`), an LCD monitor and a set of cables.
+The ready to use setup consists of the **us4R-lite™** device, a host PC computer ({numref}`us4r+pc`), an LCD monitor and a set of cables.
 
 ```{figure} img/us4r+pc.jpeg
 :name: us4r+pc
-View of the us4R™ connected to the host PC.
+View of the us4R-lite™ connected to the host PC.
 ```
 
 **As standard, a host PC, an LCD monitor and ultrasound probes are not provided by the Manufacturer.**
 
-The **us4R™** enables the user to simultaneously connect up to two ultrasound probes (linear/phase/convex). Two connectors (*CONN #0* and *CONN #1*) are situated at the top of the device; For matrix-array probe, an dedicated probe adapter is available with 4x DLM6-360 connectors.
+The **us4R-lite™** enables the user to simultaneously connect up to two ultrasound probes (linear/phase/convex). Two connectors (*CONN #0* and *CONN #1*) are situated at the top of the device; For matrix-array probe, an dedicated probe adapter is available with 4x DLM6-360 connectors.
 Only a single probe (linear/phase/convex) probe connector is active at a time. An active probe is used to transmit and receive ultrasound signals that are acquired and processed by the system. 
 
 The active connector/probe is chosen in software.
@@ -33,17 +33,17 @@ The processed data can be presented graphically on an LCD monitor.
 
 :::{Caution}
 Never unplug the probe from the device during transmission!
-This can result in damage to the transmit section of the us4R™ device!
+This can result in damage to the transmit section of the us4R-lite™ device!
 :::
 
 :::{Attention}
 The device is not equipped with life functions monitoring or alarm systems. 
-The us4R™ is not designed to monitor life functions!
+The us4R-lite™ is not designed to monitor life functions!
 :::
 
 ## Inputs and outputs
 
-The **us4R™** is equipped with:
+The **us4R-lite™** is equipped with:
 
 -   up to 2 or 4 probe connectors (depends on the probe adapter
     installed),
@@ -59,8 +59,8 @@ The **us4R™** is equipped with:
 
 ```{figure} img/us4r-back.jpeg
 :name: us4r-back
-:alt: Back-side of the us4R™ device. 
-Back-side of the us4R™ device.
+:alt: Back-side of the us4R-lite™ device. 
+Back-side of the us4R-lite™ device.
 ```
 
 **PLEASE NOTE:** External devices should be connected via cables no
@@ -74,7 +74,7 @@ The power cable connection is shown in the picture below ({numref}`us4r-back-ac`
 
 ```{figure} img/us4r-back-ac.jpg
 :name: us4r-back-ac
-The us4R™ AC power connector and ON/OFF button.
+The us4R-lite™ AC power connector and ON/OFF button.
 ```
 
 ## Connecting ultrasound probes
@@ -82,7 +82,7 @@ The us4R™ AC power connector and ON/OFF button.
 Ultrasound probes require special care, as they can be easily damaged by
 an impact. The damaged transducers could have internal element
 short-circuits or open-circuits, both can cause malfunction or even
-breakdown of the **us4R™** transmit circuitry. **Therefore, it is vital
+breakdown of the **us4R-lite™** transmit circuitry. **Therefore, it is vital
 that the probes are handled with extreme care and defective probes are
 never connected to the system.**
 
@@ -96,32 +96,32 @@ Please refer to section {numref}`Section %s <set-up/probe-adapters>` for other p
 adapters options.
 
 ```{figure} img/us4r-top-conn.jpg
-:alt: Top-view of the us4R™ with 2D (linear/phase/convex) CONN #0 and CONN #1 connectors.
-Top-view of the us4R™ with 2D (linear/phase/convex) CONN #0 and CONN #1 connectors.
+:alt: Top-view of the us4R-lite™ with 2D (linear/phase/convex) CONN #0 and CONN #1 connectors.
+Top-view of the us4R-lite™ with 2D (linear/phase/convex) CONN #0 and CONN #1 connectors.
 ```
 
 A video instruction on how to change the probe adapter for 2D (linear/phase/convex) probes is available on our YouTube channel:
 
 [![A picture containing text, electronics, display Description automatically generated](img/us4r-lite-change-adapter-video.png)](https://www.youtube.com/watch?v=v9DwhbGclBE)
 
-**PLEASE NOTE:** Only a probe prepared and configured for use with the **us4R™** can be connected to the device. For assistance, please contact the Manufacturer.
+**PLEASE NOTE:** Only a probe prepared and configured for use with the **us4R-lite™** can be connected to the device. For assistance, please contact the Manufacturer.
 
 :::{Caution}
-Using non-compatible or broken probes can result in damage to the transmission section of the us4R™!
+Using non-compatible or broken probes can result in damage to the transmission section of the us4R-lite™!
 Such damages are NOT covered under the warranty!
 :::
 
 ## PCIe ports 
 
-The **us4R™** is equipped with 4 or 8 PCIe ports on the back of the
+The **us4R-lite™** is equipped with 4 or 8 PCIe ports on the back of the
 device.
 
-The PCIe ports are intended for connecting the system to an external host PC using dedicated PCIe cables. The **us4R™** is provided with compatible host PCIe adapter card(s) that should be properly installed in the host PC controller before first use. For the MXH932 PCIe adapter cards follow the instructions available [here](https://dolphinics.com/download/MX/OPEN_DOC/MXH932_users_guide.pdf) 
+The PCIe ports are intended for connecting the system to an external host PC using dedicated PCIe cables. The **us4R-lite™** is provided with compatible host PCIe adapter card(s) that should be properly installed in the host PC controller before first use. For the MXH932 PCIe adapter cards follow the instructions available [here](https://dolphinics.com/download/MX/OPEN_DOC/MXH932_users_guide.pdf) 
 
 ### Connecting the PCIe cables
 
 The delivered PCIe cables are marked #1 to #4 or #8, to help with proper
-connection of the **us4R™** ports numbered 1...4 or 1...8 to the
+connection of the **us4R-lite™** ports numbered 1...4 or 1...8 to the
 corresponding ports on the host PC side -- also numbered. **The proper
 order of the PCIe cables is essential for device operation and cannot be
 changed!**
@@ -131,11 +131,11 @@ sure that the connector is latched properly ({numref}`us4r-back-cables`).
 
 ```{figure} img/us4r-back+cables.jpg
 :name: us4r-back-cables
-Back panel of the us4R™ showing the PCIe connectors and properly connected cabling. 
+Back panel of the us4R-lite™ showing the PCIe connectors and properly connected cabling. 
 ```
 ### Connecting host PC & display
 
-The **us4R™** requires an external host PC with an LCD monitor to function correctly. The only way to connect the **us4R™** device to the PC is through the PCIe cables.
+The **us4R-lite™** requires an external host PC with an LCD monitor to function correctly. The only way to connect the **us4R-lite™** device to the PC is through the PCIe cables.
 
 The host PC must be equipped with one or two PCIe adapter cards. Example of the host PC with two PCIe adapter cards installed -- one at the top, one at the bottom of the enclosure ({numref}`pc-back-cables`).
 
@@ -157,7 +157,7 @@ The host PC: the PCIe cables #5..#8 connected to the top PCIe interface card.
 
 ## Digital I/O ports
 
-The **us4R™** provides four digital I/O signals in the LVTTL 3.3V
+The **us4R-lite™** provides four digital I/O signals in the LVTTL 3.3V
 standard available on the SMA-type connectors:
 
 1.  CLOCK IN -- input of an external reference clock signal.
@@ -167,12 +167,12 @@ standard available on the SMA-type connectors:
 
 3.  CLOCK OUT -- output of an internal reference clock signal.
 
-4.  TRIG OUT -- output of an internal trigger signal -- can be used to synchronize other external devices/systems with the **us4R™**.
+4.  TRIG OUT -- output of an internal trigger signal -- can be used to synchronize other external devices/systems with the **us4R-lite™**.
 
 
 ```{figure} img/us4r-back-io.jpg
 :name: us4r-back-io
-Back panel of the us4R™ showing the 4x digitial I/O signals
+Back panel of the us4R-lite™ showing the 4x digitial I/O signals
 ```
 
 ## Setting High-Voltage (HV) supply for the transmitters
@@ -184,7 +184,7 @@ Voltages above 70VDC constitute a life hazard according to EN 61010-1 and great 
 
 The system TX voltage (so called HV -- High Voltage) is one of the most
 crucial parameters from the system/probe safety point of view. Because
-the **us4R™** is a research system, it enables the user to change many
+the **us4R-lite™** is a research system, it enables the user to change many
 TX parameters (TX scheme, PRF, TX voltage, pulse length, etc.).
 **However, some combinations of the TX parameters can be dangerous for
 the connected ultrasound probe and/or the system itself!** Therefore,

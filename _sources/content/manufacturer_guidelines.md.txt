@@ -11,7 +11,7 @@
 
 ## Environmental conditions
 
-The **us4R™** is designed for use in the following conditions:
+The **us4R-lite™** is designed for use in the following conditions:
 
 -   temperature of environment recommended 16 ÷ 26°C, allowable 10 ÷ 40°C
 
@@ -56,7 +56,7 @@ if you suspect that the device has been mechanically damaged or otherwise diverg
   
 The sole service provider for this device is the Manufacturer, us4us Ltd.
 
-The **us4R™** is an electronic device and should be disposed of
+The **us4R-lite™** is an electronic device and should be disposed of
 according to existing regulations.
 
 Production of this equipment required the extraction and use of natural
@@ -69,7 +69,7 @@ materials are reused or recycled appropriately.
 
 ## Cleaning and maintenance of the device
 
-The **us4R™** device should be cleaned and disinfected according to
+The **us4R-lite™** device should be cleaned and disinfected according to
 standard procedure. However, it is essential to take additional care not
 to allow any liquids into the device, as this can lead to malfunction
 and the need for servicing.
