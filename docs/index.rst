@@ -11,13 +11,9 @@ us4R-lite™ User Manual
    :numbered:
 
    content/introduction
-   content/alara
-   content/setup
    content/hardware
+   content/software
    content/first-use
-   content/manufacturer-guidelines
+   content/guidelines-for-use
    content/tech-spec
-   content/legend-symbols
-   content/current-limitations
-   content/warranty
-   content/version-history
+   content/references

@@ -13,6 +13,11 @@ us4R-lite™ is a fully programmable ultrasound research scanner featuring:
 * acquisition of raw ultrasound RF channel data and high-speed streaming to PC,
 * API for C++/Python/Matlab.
 
+```{figure} img/us4r-lite.jpg
+:name: us4r-lite
+The us4R-lite™ portable ultrasound platform.
+```
+
 
 ## Intended use
 The portable ultrasound research platform **(us4R-lite™)** is an ultrasonic system intended to be used in an uncontrolled laboratory setting for ultrasound R&D, in particular for real-time implementation of new imaging modalities and algorithms in biomedical and non-destructive testing applications. 

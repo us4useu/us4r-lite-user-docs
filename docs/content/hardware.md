@@ -1,48 +1,56 @@
 (hardware/general)=
-# Description and general rules of use
+# Hardware Description
 
-:::{Attention}
-The device can only be operated by users with a base knowledge of programming and fundamental PC skills. It is essential that users read the full text of the instruction manual before operating the device.
+## System Overview
+
+The us4R-lite™ system is an ultrasound research device designed for transmission and acquisition of ultrasound signals using connected piezoceramic probes/transducers.
+
+**The us4R-lite™ is a peripheral device thus always requires an external Host PC to work.**
+
+An open-source ARRUS™ SDK (Software Development Kit) is provided to be installed and run on the host PC to execute User’s applications/scripting for device configuration, data acquisition, and custom processing.
+
+![Peripheral mode with external Host PC connected through Thunderbolt RL-2020 model](img/peripheral-notebook.png)
+
+![Peripheral mode with external Host PC connected through PCIe RL-2021 mode](img/peripheral-desktop.png)
+
+
+(hardware/versions)=
+## Hardware Models
+The table below summarizes all hardware models of the us4R-lite™:
+
+.. list-table:: us4R-lite™ Hardware Models
+   :header-rows: 1
+
+   * - Model
+     - Options
+     - External Interface
+   * - RL_2020
+     - +GPU (NO LONGER SUPPORTED)
+     - Thunderbolt-3
+   * - RL_2021
+     - none
+     - PCIe (2x gen3 4-lanes)
+
+(hardware/probe-adapters)=
+## Ultrasound Probe Adapters
+Us4R-lite™ research system features user-changeable ultrasound probe adapters.
+Currently, we offer the following adapters:
+* EPA (Esaote compatible)
+* PAU (Ultrasonix compatible)
+* VPA (ATL/Philips compatible)
+* Custom Probe Adapter (on request)
+
+:::{Note}
+The system is supplied with one selected probe adapter. 
+Additional adapters can be purchased separately.
 :::
 
-:::{Attention}
-Before first use, you must ensure that the device is complete and in good condition. Any mechanical damage, spillage stains or similar faults require servicing. Under no circumstances can a faulty or damaged network cable be used.
-:::
-
-:::{Attention}
-Using the us4R-lite™ out of its intended use, or any use that has not been delineated in this manual, will lower the effectiveness of measures put in place to protect the user from danger, and result in a decrease of safety levels.
-:::
-  
-The ready to use setup consists of the **us4R-lite™** device, a host PC computer ({numref}`us4r+pc`), an LCD monitor and a set of cables.
-
-```{figure} img/peripheral-desktop.jpeg
-:name: peripheral-desktop
-View of the us4R-lite™ connected to the host PC with PCIe cables.
-```
-
-**As standard, a host PC, an LCD monitor, and ultrasound probes are not provided by the Manufacturer.**
-
-The **us4R-lite™** enables the user to simultaneously connect one ultrasound probes (linear/phase/convex).
-
-Ultrasound echo signals from the probe are digitized and streamed via high-speed data interface (PCIe or Thunderbolt) to the PC, and then further to the GPU cards. Data processing takes place in the CPU/GPUs.
-
-The processed data can be presented graphically on an LCD monitor. 
-
-:::{Caution}
-Never unplug the probe from the device during transmission!
-This can result in damage to the transmit section of the us4R-lite™ device!
-:::
-
-<!-- :::{Attention}
-The device is not equipped with life functions monitoring or alarm systems. 
-The us4R-lite™ is not designed to monitor life functions!
-::: -->
 
 ## Inputs and outputs
 
 The **us4R-lite™** is equipped with:
 
--   a single probe connectors,
+-   a single probe connector,
 -   2x PCIe ports or Thunderbolt-3 port (see {numref}`us4r-lite-pcie-back`),
 -   2x digital inputs (TRIG-IN, CLK-IN),
 -   2x digital outputs (TRIG-OUT, CLK-OUT),
@@ -75,8 +83,6 @@ breakdown of the **us4R-lite™** transmit circuitry.
 Probes should be disconnected from the device during the transport.
 
 The ultrasound probe connector is situated on the top of the device.
-
-Please refer to section {numref}`Section %s <set-up/probe-adapters>` for other probe adapters options.
 
 ```{figure} img/us4r-lite-probe-conn.jpg
 :alt: Top-view of the us4R-lite™ with probe connector (linear/phase/convex/RCA).
