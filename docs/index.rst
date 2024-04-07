@@ -10,7 +10,7 @@ us4R-lite™ User Manual
    :maxdepth: 2
    :numbered:
 
-   content/intended-use
+   content/introduction
    content/alara
    content/setup
    content/hardware
