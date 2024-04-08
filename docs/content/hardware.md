@@ -115,10 +115,11 @@ The delivered PCIe cables are marked #1 and #2 to help with proper connection of
 When connecting the PCIe cables you should hear/feel "a click" to be
 sure that the connector is latched properly ({numref}`us4r-lite-pcie-back+cables`).
 
-```{figure} img/us4r-lite-pcie-back+cables.jpg
+<!-- ```{figure} img/us4r-lite-pcie-back+cables.jpg
 :name: us4r-lite-pcie-back+cables
 Back panel of the us4R-lite™ showing the PCIe connectors and properly connected cabling. 
-```
+``` -->
+
 ### Connecting host PC & display
 
 The **us4R-lite™** requires an external host PC (desktop / notebook) to function correctly. The only way to connect the **us4R-lite™** device to the PC is through the PCIe or Thunderbolt cables (depending on the model).
@@ -127,12 +128,12 @@ The **us4R-lite™** requires an external host PC (desktop / notebook) to functi
 The host PC must have an empty PCIe gen3 x8 slot to install the provided
 PCIe host adapter cards ({numref}`pcie-adapter-gen3`). 
 
-```{figure} img/pcie-adapter-gen3.jpeg
+```{figure} img/pcie-adapter-gen3.jpg
 :name: pcie-adapter-gen3
 Provided PCIe host adapter card for the us4R-lite-PCIe.
 ```
 
-```{figure} img/pc+pcie-cables.jpg
+```{figure} img/pcie-cables-1234.jpg
 :name: pc-pcie-cables
 Back-side view of the host PC showing PCIe cables connected to the PCIe host adapter cards.
 ```

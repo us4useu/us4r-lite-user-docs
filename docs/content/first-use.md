@@ -127,7 +127,7 @@ Step-by-step instruction:
         -- all 2 LED indicators (from the top and/or bottom card)
         should light up GREEN, see {numref}`pcie-cables-1234`.
 
-```{figure} img/pcie-cables-1234.jpeg
+```{figure} img/pcie-cables-1234.jpg
 :name: pcie-cables-1234
 :alt: The PCIe card interface.
 

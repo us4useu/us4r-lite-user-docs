@@ -16,9 +16,9 @@ Before first use, you must ensure that the device is complete and in good condit
 Using the us4R-lite™ out of its intended use, or any use that has not been delineated in this manual, will lower the effectiveness of measures put in place to protect the user from danger, and result in a decrease of safety levels.
 :::
   
-The ready to use setup consists of the **us4R-lite™** device, a host PC computer ({numref}`us4r+pc`), an LCD monitor and a set of cables.
+The ready to use setup consists of the **us4R-lite™** device, a host PC computer ({numref}`peripheral-desktop`), an LCD monitor and a set of cables.
 
-```{figure} img/peripheral-desktop.jpeg
+```{figure} img/peripheral-desktop.png
 :name: peripheral-desktop
 View of the us4R-lite™ connected to the host PC with PCIe cables.
 ```
