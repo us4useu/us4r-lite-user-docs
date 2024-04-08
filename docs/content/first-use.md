@@ -102,7 +102,6 @@ Links to the ARRUS™ SDK package documentation are available
 [here](https://github.com/us4useu/arrus).
 
 
-
 (setup/system-setup)=
 ## System Setup
 
@@ -120,9 +119,9 @@ Before first use of the **us4R-lite™**, you must ensure that:
 Step-by-step instruction:
 
 1.  Connect the supplied power adapter to the **us4R-lite™** (DC jack) and to the mains (the power cable).
-2.  Now, turn on the device by clicking the ON/OFF button.
-3.  Connect the ultrasound probe.
-4.  Turn on the host PC
+1.  Connect the ultrasound probe.
+1.  Now, turn on the device by clicking the ON/OFF button.
+1.  Turn on the host PC
 
     a.  Before login check the color of the LEDs on the back of the PC
         -- all 2 LED indicators (from the top and/or bottom card)
