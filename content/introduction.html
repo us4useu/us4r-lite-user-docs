@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1. Introduction &mdash; us4R-lite™ User Manual  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=b3ba4146"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="2. Hardware Description" href="hardware.html" />
+    <link rel="prev" title="us4R-lite™ User Manual" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/us4us-logo-white.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#intended-use">1.1. Intended use</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interaction-of-ultrasound">1.2. Interaction of ultrasound</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#phenomena-accompanying-the-ultrasound-wave">1.2.1. Phenomena accompanying the ultrasound wave</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="hardware.html">2. Hardware Description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software.html">3. Software Description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="first-use.html">4. First Use</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guidelines-for-use.html">5. Guidelines for Use</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech-spec.html">6. Technical Specification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">7. REFERENCES</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">us4R-lite™ User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">1. </span>Introduction</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/content/introduction.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="introduction">
+<h1><span class="section-number">1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h1>
+<p>The us4R-lite™ is a portable ultrasound research system featuring raw RF/IQ data acquisition and a high-speed data interface (Thunderbolt-3 or PCIe).
+The device provides 256 TX channels and 64 RX channels. Both standard and custom probes can be connected though a set of dedicated probe adapters.
+A fully programmable TX/RX schemes and a high data bandwidth empower implementation of custom scanning sequences and real-time imaging algorithms.
+An open software library gives freedom in developing custom imaging algorithms and facilitates GPU-based processing.
+The device can work as a PC peripheral through Thunderbolt (model RL_2020) or PCIe (model RL_2021) interface.
+The us4R-lite™ can be used for R&amp;D in medical imaging and non-destructive testing applications, and well as an educational tool and demonstration platform.
+us4R-lite™ is a fully programmable ultrasound research scanner featuring:</p>
+<ul class="simple">
+<li><p>programmable TX/RX sequences,</p></li>
+<li><p>programmable TX beam steering and focusing,</p></li>
+<li><p>programmable RX gain and dynamic time-gain compensation,</p></li>
+<li><p>acquisition of raw ultrasound RF channel data and high-speed streaming to PC,</p></li>
+<li><p>API for C++/Python/Matlab.</p></li>
+</ul>
+<figure class="align-default" id="us4r-lite">
+<img alt="../_images/us4r-lite.jpg" src="../_images/us4r-lite.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.1 </span><span class="caption-text">The us4R-lite™ portable ultrasound platform.</span><a class="headerlink" href="#us4r-lite" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<section id="intended-use">
+<h2><span class="section-number">1.1. </span>Intended use<a class="headerlink" href="#intended-use" title="Permalink to this heading"></a></h2>
+<p>The portable ultrasound research platform <strong>(us4R-lite™)</strong> is an ultrasonic system intended to be used in an uncontrolled laboratory setting for ultrasound R&amp;D, in particular for real-time implementation of new imaging modalities and algorithms in biomedical and non-destructive testing applications.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The system is not a medical device and is not intended for use on humans.</p>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>The device can only be operated by users with a base knowledge of programming and fundamental PC skills. It is essential that users read the full text of the instruction manual before operating the device.</p>
+</div>
+</section>
+<section id="interaction-of-ultrasound">
+<h2><span class="section-number">1.2. </span>Interaction of ultrasound<a class="headerlink" href="#interaction-of-ultrasound" title="Permalink to this heading"></a></h2>
+<p>Ultrasonic waves are mechanical waves, which propagate in a medium (such
+as liquid, gas, solid and biological tissue). The propagation of
+ultrasonic waves is related to the transport of energy.</p>
+<section id="phenomena-accompanying-the-ultrasound-wave">
+<h3><span class="section-number">1.2.1. </span>Phenomena accompanying the ultrasound wave<a class="headerlink" href="#phenomena-accompanying-the-ultrasound-wave" title="Permalink to this heading"></a></h3>
+<p>The intensity of the ultrasound wave (the maximum pressure value)
+generated by the <strong>us4R-lite™</strong> should not constitute a hazard for test
+subjects. Nevertheless, it is important to understand how ultrasound
+interacts with tissues and realize the possible bioeffects caused by
+mechanical waves.</p>
+<p>These bio-effects fall within two categories: mechanical – related to
+the possibility of cavitation, and thermal – related to the absorption
+of wave energy by the tissue, which is converted into heat. The
+amplitude of an ultrasound wave propagating in any absorbing medium,
+such as a soft tissue, decreases with distance. Damping caused by the
+absorption and dissipation of the wave leads to energy loss. In the
+absorption process, part of the energy is converted into heat.</p>
+<p>For a detailed examination of ultrasound safety, please consult <em>The Safe Use of Ultrasound in Medical Diagnosis</em>, 3rd ed., edited by Gail ter Haar.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>The user creating a new transmit schema for the us4R-lite™ should always consider the mentioned effects of the ultrasonic wave in a given medium/propagation environment.</p>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="us4R-lite™ User Manual" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="hardware.html" class="btn btn-neutral float-right" title="2. Hardware Description" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, us4us Ltd.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
