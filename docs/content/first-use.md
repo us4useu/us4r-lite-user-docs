@@ -59,19 +59,22 @@ To shut down the us4R-lite™ in case of malfunction, remove the mains power cab
 Several adapters are available for use with the **us4R-lite™** system. Please consult the list of adapters as shown below:
 
 :::{list-table} Probe adapters 
-:widths: 15 20 30
+:widths: 30 30
 :header-rows: 1
 
 *   - Probes compatibility
     - Probe adapters
-*   - up to 128-element probes (linear/array/convex) 
+*   - up to 128-element probes (linear/array/convex)
+    -  
         - PAU (Ultrasonix Probe Adapter)
         - VPA (ATL/Philips Probe Adapter)
         - Custom Probe Adapter (on request)
-*   - up to 192-element probes (linear/array/convex) 
+*   - up to 192-element probes (linear/array/convex)
+    -  
         - EPA (Esaote Probe Adapter)
         - Custom Probe Adapter (on request)
 *   - up to 256-element probes (linear/array/convex)
+    - 
         - GE (GE Probe Adapter)
         - Custom Probe Adapter (on request)
 :::
