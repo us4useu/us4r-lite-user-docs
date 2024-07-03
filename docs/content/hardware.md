@@ -18,18 +18,19 @@ An open-source ARRUS™ SDK (Software Development Kit) is provided to be install
 ## Hardware Models
 The table below summarizes all hardware models of the us4R-lite™:
 
-.. list-table:: us4R-lite™ Hardware Models
+:::{list-table} us4R-lite™ Hardware Models
    :header-rows: 1
 
-   * - Model
-     - Options
-     - External Interface
-   * - RL_2020
-     - +GPU (NO LONGER SUPPORTED)
-     - Thunderbolt-3
-   * - RL_2021
-     - none
-     - PCIe (2x gen3 4-lanes)
+*   - Model
+    - Options
+    - External Interface
+*   - RL_2020
+    - +GPU (NO LONGER SUPPORTED)
+    - Thunderbolt-3
+*   - RL_2021
+    - none
+    - PCIe (2x gen3 4-lanes)
+:::
 
 (hardware/probe-adapters)=
 ## Ultrasound Probe Adapters
@@ -95,10 +96,10 @@ A video instruction on how to change the probe adapter is available on our YouTu
 
 **PLEASE NOTE:** Only a probe prepared and configured for use with the **us4R-lite™** can be connected to the device. For assistance, please contact the Manufacturer.
 
-:::{Caution}
+```{Caution}
 Using non-compatible or broken probes can result in damage to the transmission section of the us4R-lite™!
 Such damages are NOT covered under the warranty!
-:::
+```
 
 ## PCIe ports 
 
