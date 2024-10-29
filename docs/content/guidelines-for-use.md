@@ -91,6 +91,7 @@ The sole service provider for this device is the Manufacturer, us4us Ltd.
 The **us4R-lite™** is an electronic device and should be disposed of
 according to existing regulations.
 
+
 Production of this equipment required the extraction and use of natural
 resources. The equipment may contain substances that could be harmful to
 the environment or human health if improperly handled at the product's
