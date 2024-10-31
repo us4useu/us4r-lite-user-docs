@@ -18,7 +18,7 @@ The packaging should include:
 -   power brick supply (AC/DC) -- 1 pcs.
 -   for model with PCIe interface:
     -   PCIe host adapter card -- 1 pcs.;
-    -   PCIe cables + ferrites -- 2 pcs.;
+    -   PCIe cables + ferrites (where applicable) -- 2 pcs.;
 -   for model with Thunderbolt interface:
     -   Thunderbolt cable -- 1 pcs.;
 -   (optional) PC system controller -- 1 pcs.;
@@ -26,7 +26,8 @@ The packaging should include:
 
 In case of any missing items, the Customer is advised to contact the Manufacturer.
 
-Before the first use, it is necessary to ensure that the room has ample space, stable ground and 120/230VAC mains power source with a protective bonding.
+Before the first use, it is necessary to ensure that the room has ample space, stable ground and 120/230VAC mains power source 
+%with a protective bondin.
 
 The device should be placed to facilitate a safe operation: the power
 cables must be neither strained nor hanging too loose in a manner that
@@ -37,9 +38,9 @@ Procedures using the **us4R-lite™** should not be performed if the device is i
 
 A proper operation of the device is described in the next chapters of this manual.
 
-:::{Caution}
-The power cable should be plugged into the 120V,60Hz or 230V,50Hz mains power supply with a protective bonding.
-:::
+%:::{Caution}
+%The power cable should be plugged into the 120V,60Hz or 230V,50Hz mains power supply with a protective bonding.
+%:::
 ## Power supply connection
 
 <!-- :::{Caution}
@@ -56,31 +57,7 @@ To shut down the us4R-lite™ in case of malfunction, remove the mains power cab
 (set-up/probe-adapters)=
 ## Probe Adapters
 
-Several adapters are available for use with the **us4R-lite™** system. Please consult the list of adapters as shown below:
-
-:::{list-table} Probe adapters 
-:widths: 30 30
-:header-rows: 1
-
-*   - Probes compatibility
-    - Probe adapters
-*   - up to 128-element probes (linear/array/convex)
-    -  
-        - PAU (Ultrasonix Probe Adapter)
-        - VPA (ATL/Philips Probe Adapter)
-        - Custom Probe Adapter (on request)
-*   - up to 192-element probes (linear/array/convex)
-    -  
-        - EPA (Esaote Probe Adapter)
-        - Custom Probe Adapter (on request)
-*   - up to 256-element probes (linear/array/convex)
-    - 
-        - GE (GE Probe Adapter)
-        - Custom Probe Adapter (on request)
-:::
-
-If you cannot find the adapter that suits your application, it is possible to order a custom probe adapter from the us4us®. Please contact us at <support@us4us.eu> to discuss the options.
-
+Several adapters are available for use with the **us4R-lite™** system. Please ensure that your device is equipped with one. The list of adapters can be found in Ultrasound Probe Adapters section (see: {numref}`Section %s <hardware/probe-adapters>`.).
 
 (set-up/System setup)=
 ## System setup
@@ -96,7 +73,8 @@ from the HV power supply during transmit during normal work conditions.
 
 <!-- Please consult the Manufacturer guidelines in section {numref}`Section %s <manufacturer-guidelines>`. -->
 
-## Firmware and software
+(setup/software-installation)=
+## Software installation and firmware update
 
 For the firmware update and software installation, follow the instructions available
 [here](https://us4useu.github.io/arrus-toolkit/content/installation/index.html).
@@ -105,8 +83,8 @@ Links to the ARRUS™ SDK package documentation are available
 [here](https://github.com/us4useu/arrus).
 
 
-(setup/system-setup)=
-## System Setup
+(setup/system-running)=
+## Running the acquisition
 
 :::{CAUTION}
 Never unplug the probe from the device during transmission!

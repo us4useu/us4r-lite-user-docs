@@ -25,9 +25,11 @@ The table below summarizes all hardware models of the us4R-lite™:
     - Options
     - External Interface
 *   - RL_2020
+         <span style="color:red">(EOL)</span>
     - +GPU (NO LONGER SUPPORTED)
     - Thunderbolt-3
 *   - RL_2021
+        (OBSOLETE)
     - none
     - PCIe (2x gen3 4-lanes)
 *   - RL-2024-PCIe
@@ -45,6 +47,31 @@ Currently, we offer the following adapters:
 * DLPH (GE compatible)
 * DLPB (RCA compatible)
 * Custom Probe Adapter (on request)
+
+
+:::{list-table} Probe adapters 
+:widths: 30 30
+:header-rows: 1
+
+*   - Probes compatibility
+    - Probe adapters
+*   - up to 128-element probes (linear/array/convex)
+    -  
+        - PAU (Ultrasonix Probe Adapter)
+        - VPA (ATL/Philips Probe Adapter)
+        - Custom Probe Adapter (on request)
+*   - up to 192-element probes (linear/array/convex)
+    -  
+        - EPA (Esaote Probe Adapter)
+        - Custom Probe Adapter (on request)
+*   - up to 256-element probes (linear/array/convex)
+    - 
+        - GE (GE Probe Adapter)
+        - Custom Probe Adapter (on request)
+:::
+
+If you cannot find the adapter that suits your application, it is possible to order a custom probe adapter from the us4us®. Please contact us at <support@us4us.eu> to discuss the options.
+
 
 :::{Note}
 The system is supplied with one selected probe adapter. 
@@ -66,7 +93,7 @@ The **us4R-lite™** is equipped with:
 :name: us4r-lite-pcie-back-rl-2024
 :alt: Back-side of the us4R-lite™ device with PCIe interface. 
 :width: 60 %
-Back-side of the us4R-lite™ device with PCIe interface.
+Back-side of the us4R-lite™, Model: RL-2024-PCIe device with PCIe interface.
 ```
 
 **PLEASE NOTE:** External devices should be connected via cables no longer than 3m.
@@ -116,6 +143,7 @@ Such damages are NOT covered under the warranty!
 The **us4R-lite™** models: RL_2021 and RL-2024-PCIe are equipped with 2x PCIe gen3 x4 ports on the back of the device.
 
 The PCIe ports are intended for connecting the system to an external host PC using the provided PCIe cables. The **us4R-lite™** models equiped with the PCIe interface are also provided with compatible PCIe host adapter card that should be properly installed in the host PC controller before the first use. 
+
 To proper install the PXH832 PCIe adapter cards follow the instructions available [here](https://www.dolphinics.com/download/PX/OPEN_DOC/PXH832_users_guide.pdf). Ensure that the DIP switch configuration shown in Table 3 of the referenced document is set to Transparent Host, Four x4 Ports.
 
 ### Connecting the PCIe cables
@@ -143,11 +171,13 @@ PCIe host adapter cards ({numref}`pcie-adapter-gen3`).
 
 ```{figure} img/pcie-adapter-gen3.jpg
 :name: pcie-adapter-gen3
+:width: 60 %
 Provided PCIe host adapter card for the us4R-lite-PCIe.
 ```
 
 ```{figure} img/host-PC-back-rl-2024+cables.jpg
 :name: host-PC-back-rl-2024+cables
+:width: 60 %
 Back-side view of the host PC showing PCIe cables connected to the PCIe host adapter cards.
 ```
 
@@ -167,7 +197,8 @@ standard available on the SMA-type connectors:
 
 ```{figure} img/us4r-lite-pcie-back-io-rl-2024.jpg
 :name: us4r-lite-pcie-back-io-rl-2024
-Back panel of the us4R-lite™ showing the 4x digital I/O signals
+:width: 60 %
+Back panel of the us4R-lite™, model RL-2024-PCIe showing the 4x digital I/O signals
 ```
 
 ## Setting High-Voltage (HV) supply for the transmitters
