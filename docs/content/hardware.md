@@ -1,7 +1,7 @@
 (hardware/general)=
 # Hardware Description
 
-(psystem-overview)=
+(system-overview)=
 ## System Overview
 
 The us4R-lite™ system is an ultrasound research device designed for transmission and acquisition of ultrasound signals using connected piezoceramic probes/transducers.
@@ -11,21 +11,14 @@ The us4R-lite™ system is an ultrasound research device designed for transmissi
 The us4R-lite™ is connected using a Thunderbolt-3 ({numref}`peripheral-notebook`) or PCIe cable ({numref}`peripheral-desktop`) to a PC/notebook running ARRUS™ SDK. 
 An open-source ARRUS™ SDK (Software Development Kit) is provided to be installed and run on the host PC to execute User’s applications/scripting for device configuration, data acquisition, and custom processing.
 
-% ![Peripheral mode with external Host PC connected through Thunderbolt RL-2020 model](img/peripheral-notebook.% png)
-
 ```{figure} img/peripheral-notebook.png
 :name: peripheral-notebook
-:alt: Peripheral mode with external Host PC connected through Thunderbolt, us4R-lite™, Model: RL-2020
-:width: 100 %
 Peripheral mode with external Host PC connected through Thunderbolt, us4R-lite™, Model: RL-2020 <span style="color:red">(EOL)</span>
-
-%![Peripheral mode with external Host PC connected through PCIe RL-2021 model](img/peripheral-desktop.png)
-
+```
 ```{figure} img/peripheral-desktop.png
 :name: peripheral-desktop
-:alt: Peripheral mode with external Host PC connected through PCIe, us4R-lite™, Model: RL-2021
-:width: 100 %
 Peripheral mode with external Host PC connected through PCIe, us4R-lite™, Model: RL-2021
+```
 
 (hardware/versions)=
 ## Hardware Models
@@ -52,7 +45,8 @@ The table below summarizes all hardware models of the us4R-lite™:
 
 (hardware/probe-adapters)=
 ## Ultrasound Probe Adapters
-Us4R-lite™ research system features user-changeable ultrasound probe adapters.
+
+Us4R-lite™ research system features changeable ultrasound probe adapter.
 Currently, we offer the following adapters:
 
 :::{list-table} Probe adapters 
@@ -114,7 +108,7 @@ The system is supplied with one selected probe adapter.
 Additional adapters can be purchased separately.
 :::
 
-
+(inputs-outputs)=
 ## Inputs and outputs
 
 The **us4R-lite™** is equipped with:
@@ -174,22 +168,17 @@ Using non-compatible or broken probes can result in damage to the transmission s
 Such damages are NOT covered under the warranty!
 ```
 
-## PCIe ports 
+## Connecting the host PC
+The **us4R-lite™** requires an external host PC (desktop / notebook) with a display to function correctly. The only way to connect the **us4R-lite™** device to the PC is through the PCIe or Thunderbolt cables (depending on the model).
 
+
+
+### PCIe interface
+
+**PCIe ports & PCIe cables** <br> 
 The **us4R-lite™** models: RL_2021 and RL-2024-PCIe are equipped with 2x PCIe gen3 x4 ports on the back of the device.
 
-The PCIe ports are intended for connecting the system to an external host PC using the provided PCIe cables. The **us4R-lite™** models equiped with the PCIe interface are also provided with compatible PCIe host adapter card that should be properly installed in the host PC controller before the first use. 
-
-To proper install the PXH832 PCIe adapter cards follow the instructions available [here](https://www.dolphinics.com/download/PX/OPEN_DOC/PXH832_users_guide.pdf). Ensure that the DIP switch configuration shown in Table 3 of the referenced document is set to Transparent Host, Four x4 Ports.
-
-### Connecting the PCIe cables
-
-When connecting the PCIe cables you should hear/feel "a click" to be
-sure that the connector is latched properly ({numref}`us4r-lite-pcie-back-rl-2024+cables`).
-
-**The proper order of the PCIe cables doesn't matter if you configure your DIP-Switches on the PXH832 card properly!**
-
-
+The PCIe ports are intended for connecting the system to an external host PC using the provided PCIe cables ({numref}`us4r-lite-pcie-back-rl-2024+cables`). 
 
  ```{figure} img/us4r-lite-pcie-back-rl-2024+cables.jpg
 :name: us4r-lite-pcie-back-rl-2024+cables
@@ -197,11 +186,12 @@ sure that the connector is latched properly ({numref}`us4r-lite-pcie-back-rl-202
 Back panel of the us4R-lite™ showing the PCIe connectors and properly connected cabling. 
 ```
 
-### Connecting host PC & display
+When connecting the PCIe cables you should hear/feel "a click" to be
+sure that the connector is latched properly ({numref}`us4r-lite-pcie-back-rl-2024+cables`).
 
-The **us4R-lite™** requires an external host PC (desktop / notebook) to function correctly. The only way to connect the **us4R-lite™** device to the PC is through the PCIe or Thunderbolt cables (depending on the model).
+**PCIe adapter card** <br>
+The **us4R-lite™** models equiped with the PCIe interface are also provided with compatible PCIe host adapter card that should be properly installed in the host PC controller before the first use. 
 
-#### Connecting with PCIe
 The host PC must have an empty PCIe gen3 x8 slot to install the provided
 PCIe host adapter cards ({numref}`pcie-adapter-gen3`). 
 
@@ -211,14 +201,17 @@ PCIe host adapter cards ({numref}`pcie-adapter-gen3`).
 Provided PCIe host adapter card for the us4R-lite-PCIe.
 ```
 
+To proper install the PXH832 PCIe adapter cards follow the instructions available [here](https://www.dolphinics.com/download/PX/OPEN_DOC/PXH832_users_guide.pdf). Ensure that the DIP switch configuration shown in Table 3 of the referenced document is set to Transparent Host, Four x4 Ports.
+
+**The proper order of the PCIe cables doesn't matter if you configure your DIP-Switches on the PXH832 card properly!**
+
+To disconnect the PCIe cables pull the plastic tab at the bottom of the PCIe cable plug ({numref}`host-PC-back-rl-2024+cables`).
+
 ```{figure} img/host-PC-back-rl-2024+cables.jpg
 :name: host-PC-back-rl-2024+cables
 :width: 60 %
-Back-side view of the host PC showing PCIe cables connected to the PCIe host adapter cards.
+Back of the host PC with PCIe host adapter card installed and PCIe cables connected.
 ```
-
-**The proper order of the PCIe cables doesn't matter if you configure your DIP-Switches on the PXH832 card properly!**
-To disconnect the PCIe cables pull the plastic tab at the bottom of the PCIe cable plug ({numref}`pc-pcie-cables`).
 
 ## Digital I/O ports
 
@@ -246,9 +239,12 @@ Voltages above 70VDC constitute a life hazard according to EN 61010-1 and great 
 The system TX voltage (so called HV -- High Voltage) is one of the most
 crucial parameters from the system/probe safety point of view. Because
 the **us4R-lite™** is a research system, it enables the user to change many TX parameters (TX scheme, PRF, TX voltage, pulse length, etc.).
+
 **However, some combinations of the TX parameters can be dangerous for
 the connected ultrasound probe and/or the system itself!** 
+
 Therefore, the user is fully responsible for verifying a safe set of TX parameters that can be used with the connected probe in a given application.
+
 **Application of an excessive TX voltage or power to the probe can
 (will) result in damage to the system and/or the probe!**
 

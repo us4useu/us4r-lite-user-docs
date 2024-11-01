@@ -140,3 +140,28 @@ The host PC: the PCIe card interface with 2 connected PCIe cables and the PCIe l
 11. Turn off the **us4R-lite™** by pressing the ON/OFF button.
 
 12. After 5 seconds turn off the Power Switch.
+
+## Setting High-Voltage (HV) supply for the transmitters
+
+:::{Caution}
+Voltages above 70VDC constitute a life hazard according to EN 61010-1 and great care must be takes when using the power supply at voltages above this level!
+:::
+
+The system TX voltage (so called HV -- High Voltage) is one of the most
+crucial parameters from the system/probe safety point of view. Because
+the **us4R-lite™** is a research system, it enables the user to change many TX parameters (TX scheme, PRF, TX voltage, pulse length, etc.).
+
+**However, some combinations of the TX parameters can be dangerous for
+the connected ultrasound probe and/or the system itself!** 
+
+Therefore, the user is fully responsible for verifying a safe set of TX parameters that can be used with the connected probe in a given application. Our recommendation is to start experimenting with lower HV voltages, e.g., 10 V instead of 50 V, and gradually increase the voltage after ensuring that the signal from all transducer elements is received correctly.
+%CZY MAMY PRZYKŁAD JAK SPRAWDZIĆ NA NITCE CZY WSZYSTKIE KANAŁY WIDAĆ OK?
+
+**Application of an excessive TX voltage or power to the probe can
+(will) result in damage to the system and/or the probe!**
+
+We strongly advise to use the lowest TX voltage possible -- as low as
+reasonably achievable (ALARA rule). Also, please consult us4us® and the
+probe producer to get advice on the max TX voltage and power that can be
+delivered to the probe.
+
