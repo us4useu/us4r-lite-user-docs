@@ -1,25 +1,38 @@
 (hardware/general)=
 # Hardware Description
 
+(psystem-overview)=
 ## System Overview
 
 The us4R-lite™ system is an ultrasound research device designed for transmission and acquisition of ultrasound signals using connected piezoceramic probes/transducers.
 
-**The us4R-lite™ is a peripheral device thus always requires an external Host PC to work.**
+**The us4R-lite™ is a peripheral device, so in addition to an ultrasound probe, it always requires an external Host PC to work.**
 
+The us4R-lite™ is connected using a Thunderbolt-3 ({numref}`peripheral-notebook`) or PCIe cable ({numref}`peripheral-desktop`) to a PC/notebook running ARRUS™ SDK. 
 An open-source ARRUS™ SDK (Software Development Kit) is provided to be installed and run on the host PC to execute User’s applications/scripting for device configuration, data acquisition, and custom processing.
 
-![Peripheral mode with external Host PC connected through Thunderbolt RL-2020 model](img/peripheral-notebook.png)
+% ![Peripheral mode with external Host PC connected through Thunderbolt RL-2020 model](img/peripheral-notebook.% png)
 
-![Peripheral mode with external Host PC connected through PCIe RL-2021 mode](img/peripheral-desktop.png)
+```{figure} img/peripheral-notebook.png
+:name: peripheral-notebook
+:alt: Peripheral mode with external Host PC connected through Thunderbolt, us4R-lite™, Model: RL-2020
+:width: 100 %
+Peripheral mode with external Host PC connected through Thunderbolt, us4R-lite™, Model: RL-2020 <span style="color:red">(EOL)</span>
 
+%![Peripheral mode with external Host PC connected through PCIe RL-2021 model](img/peripheral-desktop.png)
+
+```{figure} img/peripheral-desktop.png
+:name: peripheral-desktop
+:alt: Peripheral mode with external Host PC connected through PCIe, us4R-lite™, Model: RL-2021
+:width: 100 %
+Peripheral mode with external Host PC connected through PCIe, us4R-lite™, Model: RL-2021
 
 (hardware/versions)=
 ## Hardware Models
 The table below summarizes all hardware models of the us4R-lite™:
 
 :::{list-table} us4R-lite™ Hardware Models
-   :header-rows: 1
+:header-rows: 1
 
 *   - Model
     - Options
@@ -41,34 +54,57 @@ The table below summarizes all hardware models of the us4R-lite™:
 ## Ultrasound Probe Adapters
 Us4R-lite™ research system features user-changeable ultrasound probe adapters.
 Currently, we offer the following adapters:
-* EPA (Esaote compatible)
-* PAU (Ultrasonix compatible)
-* VPA (ATL/Philips compatible)
-* DLPH (GE compatible)
-* DLPB (RCA compatible)
-* Custom Probe Adapter (on request)
-
 
 :::{list-table} Probe adapters 
-:widths: 30 30
-:header-rows: 1
+   :widths: 20 20 50 20 20
+   :header-rows: 1
 
-*   - Probes compatibility
-    - Probe adapters
-*   - up to 128-element probes (linear/array/convex)
-    -  
-        - PAU (Ultrasonix Probe Adapter)
-        - VPA (ATL/Philips Probe Adapter)
-        - Custom Probe Adapter (on request)
-*   - up to 192-element probes (linear/array/convex)
-    -  
-        - EPA (Esaote Probe Adapter)
-        - Custom Probe Adapter (on request)
-*   - up to 256-element probes (linear/array/convex)
+*   - Connector <br>
+        Type
+    - Name
+    - Rev
+    - Supported Probes
+    - List of tested probes
+*   - QLC-260
+    - EPA
+    - 3.0
+    - ESAOTE compatible <br>
+    _up to 192-element probes <br>
+    (linear/array/convex)_
     - 
-        - GE (GE Probe Adapter)
-        - Custom Probe Adapter (on request)
+        - SL1543 linear-array
+        - AL2442 linear-array
+        - SP2430 phased-array
+        - AC2541 convex-array
+*   - DL1-156
+    - PAU
+    - 1.0
+    - ULTRASONIX compatible <br>
+    _[up to 128-element probes (linear/array/convex)]_
+    - 
+        - L14-5/38 linear-array
+        - L9-4/38 linear-array
+*   - DL5-260
+    - VPA
+    - 1.0
+    - ATL / Philips compatible <br>
+    _[up to 128-element probes (linear/array/convex)]_<br>
+    _in-probe MUX is not supported!_
+    - 
+        - L7-4/38 linear-array
+        - C5-2 convex-array
+*   - DLP-408
+    - DLPx
+    - 2.0
+    - GE compatible <br>
+    RCA compatible <br>
+    _[up to 256-element probes (linear/array/convex/row-column)]_
+    - 
+        - GE..LLL
+        - RCA..LLL
+
 :::
+
 
 If you cannot find the adapter that suits your application, it is possible to order a custom probe adapter from the us4us®. Please contact us at <support@us4us.eu> to discuss the options.
 

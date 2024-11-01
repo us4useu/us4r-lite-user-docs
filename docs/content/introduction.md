@@ -4,7 +4,7 @@ The us4R-lite™ is a portable ultrasound research system featuring raw RF/IQ da
 The device provides 256 TX channels and 64 RX channels. Both standard and custom probes can be connected though a set of dedicated probe adapters.
 A fully programmable TX/RX schemes and a high data bandwidth empower implementation of custom scanning sequences and real-time imaging algorithms. 
 An open software library gives freedom in developing custom imaging algorithms and facilitates GPU-based processing.
-The device can work as a PC peripheral through Thunderbolt (model RL_2020) or PCIe (model RL_2021) interface. 
+The device can work as a PC peripheral through Thunderbolt (model RL_2020) or PCIe (models: RL_2021 and RL-2024-PCIe) interface. 
 The us4R-lite™ can be used for R&D in medical imaging and non-destructive testing applications, and well as an educational tool and demonstration platform. 
 us4R-lite™ is a fully programmable ultrasound research scanner featuring:
 * programmable TX/RX sequences,
