@@ -1,34 +1,20 @@
 (tech-spec)=
 # Technical Specification
 
-## Technical data
-
--   Ultrasound frequencies up to 20 MHz (Model: R-2021) or up to 30MHz (Model: R-2023);
--   Mains power supply 120V,60Hz / 230V,50Hz ±10%
--   Power consumption (average) 70W
--   Power consumption (max) 90W (max power of the us4R-lite power supply)
--   Product Dimensions (DxWxH) [mm]: 264 x 445 × 154\* mm
-
-> *\*high without probe adapter; total high may slightly differ
-> depending on the installed Probe Adapter: +37mm (EPA),
-> +50mm (PAU), +38mm (VPA)*
-
--   Weight 10.5 kg
-
 ## Basic Composition
 
--   the **us4R-lite™** device (with probe adapter)
--   for PCIe model:
-  -   1x PCIe host adapter card
-  -   4x PCIe cable
-  -   1x power adapter AC/DC
--   for Thunderbolt model:
-  -   1x Thunderbolt cable
+The **us4R-lite™** device (with probe adapter)
+- PCIe, Model: RL-2024-PCIe:
+  - 1x PCIe host adapter card
+  - 4x PCIe cable
+  - 1x power adapter AC/DC
+- Thunderbolt, Model: RL_2020:
+  - 1x Thunderbolt cable
 -   (optional) ultrasound probe
 -   (optional) PC system controller with GPU cards
 -   User Manual (on-line)
 
-## Detailed specification
+## Technical data and Detailed specification
 
 :::{list-table} 
 :widths: 15 35
@@ -38,17 +24,19 @@
 * - Number of channels
   - 256
 * - Transmit frequency
-  - up to 20MHz (Model: R-2021); up to 30MHz (Model: R-2023)
+  - 1MHz to 20MHz (Model: RL-2020); 1MHz to 30MHz (Model: RL-2024-PCIe)
 * - Tx time delay resolution
-  - up to 5 ns (depends on the system clock)
+  - up to 7 .7 ns (depends on the system clock)
 * - Programmable TX voltage
   - up to 180Vpp (±90V) 
 * - TX pulsers levels
-  - 3 (Model: R-2021), 3/5 (Model: R-2023 - depends on configuration)
+  - 3 (Model: R), 3/5 (Model: R-2023 - depends on configuration)
 * - Per-channel programmable
-  - center frequency, pulse width (pulse duty cycle), pulse length, polarity and delay
+  - center frequency, pulse length, polarity and delay
+* - TX function
+  - Possibility of generating pseudo-arbitrary transmit waveforms
 * - Pulse repetition frequency
-  - up to 100 kHz
+  - up to 20 kHz (depends on the other parameters and loading conditions)
 * - **Receive**
   - 
 * - Number of channels
@@ -65,19 +53,19 @@
     - Total signal chain gain: 54 dB (max) 
     - TGC update rate 1MHz
 * - Data sampling
-  - 14-bit @ 65MSPS
+  - 14-bit @ 65MSPS  /  16-bit @ 120MSPS
 * - Raw data buffer
   - up to 128MB per channel
 * - **External synchronization**
   - 
-* - Output for synchronization
+* - Output for synchronization (TRIG OUT)
   - digital, LVTTV 3.3V, 50$\Omega$ output impedance
-* - Input for synchronization
-  - digital, LVTTV 3.3V, 50$\Omega$ input impedance
-* - Reference clock output
+* - Input for synchronization (TRIG IN)
+  - digital, LVTTV 3.3V, HiZ input impedance
+* - Reference clock output (CLK OUT)
   - digital, LVTTV 3.3V, 50$\Omega$ output impedance
-* - Output for synchronization
-  - digital, LVTTV 3.3V, 50$\Omega$ input impedance
+* - Output for synchronization (CLK IN)
+  - digital, LVTTV 3.3V, HiZ input impedance
 * - **Ultrasound probes**
   - 
 * - Ultrasound probe connectors
@@ -86,7 +74,7 @@
   -
     - 2D probes (linear/phase/convex): up to 256-elem (depending on the probe adapter and the probe)
     - 3D probes (RCA) -- offered by us4us / produced by Vermon
-* - **Interface**
+* - **Interface (Model: RL-PCIe-2024)**
   - 
 * - Data streaming interface
   - 2x PCIe gen3 x4
@@ -100,14 +88,34 @@
   - C++ (currently RF data acquisition only); Python; Matlab® 
 * - **Power supply**
   - 
-* - Mains power
-  - 120V,60Hz / 230V,50Hz ±10%
-* - Average power usage
-  - 300W
-* - External dimensions (DxWxH) [mm]
-  -  264 x 445 × 154 mm *high without probe adapter; total high may slightly differ depending on the Probe Adapter used: +31mm (MAT2372), +37mm (EPA), +50mm (PAU), +38mm (VPA)*
-* - Weight
-  - 10.5 kg
+* - Power connection
+  - pluggable
+* - External AC/DC power supply*
+  - 
+    - INPUT: 120V,60Hz / 230V,50Hz ±10%
+    - OUTPUT: 19VDC, 4.74A
+    - The us4R-liteTM must be supplied from the source that meets IEC Class II and NEC Class 2 power supply requirements.
+    - Dedicated FSP090-RBCM1 power supply is delivered with the device
+* - Max power consumption
+  - 90W
+* - **Physical / Environmental**
+  - 
+* - System size (DxWxH)
+  -  260 x 200 × 83 [mm] *high without probe adapter; total high may slightly differ depending on the Probe Adapter used: +27mm (EPA), +39mm (PAU), +26mm (VPA)*
+* - System weight
+  - ~2.8 kg
+* - Ingress protection
+  - IP2x
+* - Position
+  - vertical
+* - Mobility
+  - portable
+* - Environmental conditions
+  - 
+    - Application: laboratory 
+    - up to 2000 m
+    - pollution degree II
+
 * - **Requirements**
   - 
 * - PC host
@@ -123,7 +131,7 @@
 * - GPU (optional)
   - e.g. High-performance NVidia GPU with GPU-Direct support
 * - PCIe adapter card
-  - e.g. Dolphinics PXH832 or MXH (depends on configuration)
+  - e.g. Dolphinics PXH832
 * - Accessories
   - e.g. LCD monitor with DP input, USB keyboard and mouse
 :::
@@ -134,7 +142,8 @@
 
 Here is a list current system limitations:
 
-- Standard sampling frequency is 65MSPS. Sampling at 80MSPS requires a change of system firmware.
 - SWE (Shear-Wave Elastography) functions are limited and available only to approved early-adopters.
+- The system provides only pre-beamformed RF or I/Q data. It does not perform image reconstruction in particular. The signal processing should be handled by a dedicated processing hardware, e.g. GPU. We provide ready to use examples e.g. for the B-mode image reconstruction on the NVIDIA GPU. 
+- The ability to achieve a stable, selected PRF depends on the chosen communication interface between the host PC and the ultrasound system. For a custom solution, it is the user's responsibility to ensure that the selected communication interface with the host PC and the signal processing setup satisfies requirements for the selected PRF.
 
 The above limitations may be removed in future versions of the system software/firmware.
