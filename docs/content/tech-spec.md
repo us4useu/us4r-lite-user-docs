@@ -59,7 +59,7 @@ The **us4R-lite™** device (with probe adapter)
 * - **External synchronization**
   - 
 * - Output for synchronization (TRIG OUT)
-  - digital, LVTTV 3.3V, 50$\Omega$ output impedance
+  - digital, LVTTV 3.3V, 50$\Omega$ output impedance, active high, (10us pulse)
 * - Input for synchronization (TRIG IN)
   - digital, LVTTV 3.3V, HiZ input impedance
 * - Reference clock output (CLK OUT)
