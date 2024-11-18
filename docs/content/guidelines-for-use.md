@@ -20,12 +20,12 @@ The ready to use setup consists of the **us4R-lite™** device, a host PC comput
 
 ```{figure} img/peripheral-desktop.png
 :name: peripheral-desktop
-View of the us4R-lite™ connected to the host PC with PCIe cables.
+View of the us4R-lite™, Model: RL_2021 connected to the host PC with PCIe cables.
 ```
 
 **As standard, a host PC, an LCD monitor, and ultrasound probes are not provided by the Manufacturer.**
 
-The **us4R-lite™** enables the user to simultaneously connect one ultrasound probes (linear/phase/convex/row-column).
+The **us4R-lite™** enables the user to simultaneously connect one ultrasound probes (linear/phase/convex).
 
 Ultrasound echo signals from the probe are digitized and streamed via high-speed data interface (PCIe or Thunderbolt) to the PC, and then further to the GPU cards. Data processing takes place in the CPU/GPUs.
 
@@ -36,9 +36,6 @@ Never unplug the probe from the device during transmission!
 This can result in damage to the transmit section of the us4R-lite™ device!
 :::
 
-:::{Caution}
-Do not turn off the host PC or the us4R-lite system during communication with it! In particular, turning off the PC or us4R-lite while running an imaging script, executing some custom TX/RX sequence, or after setting a high voltage may damage the ultrasound system.
-:::
 <!-- :::{Attention}
 The device is not equipped with life functions monitoring or alarm systems. 
 The us4R-lite™ is not designed to monitor life functions!

@@ -87,7 +87,7 @@ Links to the ARRUS™ SDK package documentation are available
 ## Running the acquisition
 
 :::{CAUTION}
-Never unplug the probe from the device during transmission!
+Never unplug the probe from the device during transmission, and never transmit with no load!
 This can result in damage to the transmission unit of the us4R-lite™.
 :::
 
@@ -144,7 +144,7 @@ The host PC: the PCIe card interface with 2 connected PCIe cables and the PCIe l
 ## Setting High-Voltage (HV) supply for the transmitters
 
 :::{Caution}
-Voltages above 70VDC constitute a life hazard according to EN 61010-1 and great care must be takes when using the power supply at voltages above this level!
+Voltages above 46.7VAC peak or 70VDC constitute a life hazard according to EN 61010-1 and great care must be takes when using the power supply at voltages above this level!
 :::
 
 The system TX voltage (so called HV -- High Voltage) is one of the most
