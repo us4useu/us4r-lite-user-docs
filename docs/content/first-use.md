@@ -4,9 +4,9 @@
 
 The device is delivered to the user pre-assembled and boxed.
 
-The user must connect the components and perform a setup before the
-first use (see: {numref}`Section %s <setup/system-setup>`.). The unboxing of the device should
-be performed with utmost care.
+The unboxing of the device should be performed with utmost care.
+
+The user must connect the components and set up the entire system as described in this section before running the first acquisition.
 
 :::{Caution}
 If the device was placed in an environment with climatic conditions that sharply diverge from normal office conditions, it should undergo a process of acclimatization before the first use. This comprises of leaving the device out of the transport packaging for a minimum of 12 hours.
@@ -47,6 +47,8 @@ A proper operation of the device is described in the next chapters of this manua
 The 120/230VAC power socket used to power the us4R-lite™ must be equipped with a protective earth wire. It is imperative to ensure that the electrical system provides the fire protection required for the class I devices.
 ::: -->
 
+User should use the power adapter delivered with the **us4R-lite™** system, and connect it to the device as shown in the figure ({numref}`us4r-lite-pcie-power-rl-2024`)
+
 A loss of mains power during operation will result in an immediate shutdown of the device. The us4R-lite™ will enter standby mode once the mains power is restored. ON/OFF button must be pressed to power the us4R-lite™ back on. After power on the host PC must be restarted to restore the communication with the system.
 
 :::{Caution}
@@ -57,7 +59,12 @@ To shut down the us4R-lite™ in case of malfunction, remove the mains power cab
 (set-up/probe-adapters)=
 ## Probe Adapters
 
-Several adapters are available for use with the **us4R-lite™** system. Please ensure that your device is equipped with one. The list of adapters can be found in Ultrasound Probe Adapters section (see: {numref}`Section %s <hardware/probe-adapters>`.).
+Several adapters are available for use with the **us4R-lite™** system. Please ensure that your device is equipped with one. The list of adapters can be found in Ultrasound Probe Adapters section (see: {numref}`Section %s <hardware/probe-adapters>`).
+
+Always keep the ultrasound probe connected to the **us4R-lite™** system during operation. It is required for the proper functioning of the device.
+
+:::{CAUTION} Never unplug the probe from the device during transmission, and never transmit with no load! This can result in damage to the transmission unit of the us4R-lite™. :::
+
 
 (set-up/System setup)=
 ## System setup
@@ -76,8 +83,36 @@ from the HV power supply during transmit during normal work conditions.
 (setup/software-installation)=
 ## Software installation and firmware update
 
-For the firmware update and software installation, follow the instructions available
-[here](https://us4useu.github.io/arrus-toolkit/content/installation/index.html).
+The device is delivered with the current stable version of the firmware pre-installed.
+
+User has to prepare his host PC only:
+1. Check and install the PCIe adapter card (for models with the PCIe interface) as described in the Section ({numref}`Section %s <hardware/pcie-ports>`.)
+2. Ensure that your operating system meets the requirements described [here](https://us4useu.github.io/arrus-toolkit/content/installation/index.html#requirements)
+3. Check if CUDA Toolkit in the compatible version is installed on your computer. You can check compatible CUDA Toolkit versions with our current stable varsion in the table [here](https://us4useu.github.io/arrus-toolkit/content/installation/index.html#installing-software-components-separately), and download required CUDA Toolkit from the NVIDIA download page [here] https://developer.nvidia.com/cuda-toolkit-archive.
+4. Download the current stable version of the Drivers from the table [here](https://us4useu.github.io/arrus-toolkit/content/installation/index.html#installing-software-components-separately). For Linux drivers, just use the provided link. For Windows drivers, contact us4us support for the newest version.
+5. Install the Drivers. For Linux use [these](https://us4useu.github.io/arrus-toolkit/content/installation/index.html#linux) instructions, for Windows follow [these]https://us4useu.github.io/arrus-toolkit/content/installation/index.html#windows. This step requires connecting the power supply and the **us4R-lite™** device to the host PC, as described in the sections (see: {numref}`Section %s <hardware/power-switch>` and {numref}`Section %s <hardware/connecting-hostPC>`).
+6.  Download the current stable version of the ARRUS from the table [here](https://us4useu.github.io/arrus-toolkit/content/installation/index.html#installing-software-components-separately). From the list of Assets available for each ARRUS version, choose the one that matches your application. e.g. for Windows environment and Python 3.9 you should download arrus-0.10.4-cp39-cp39-linux_x86_64.whl package, for Linux and C++ you should download arrus_cpp-v0.10.4_linux_x86_64.zip
+package etc. 
+You can see all possible configurations, with those mentioned earlier marked in the {numref}`arrus-package`
+
+```{figure} img/arrus-package.png
+:name: arrus-package
+:alt: ARRUS Assets
+
+An example of the list of ARRUS packages available for download with ARRUS v0.10.4.
+```
+
+The designations are interpreted as follows:
+- cp stands for Python, e.g., cp310 means Python 3.10, cp39 means Python 3.9, and so on.
+- cpp stands for C++.
+- matlab stands for Matlab.
+- win or linux indicate the operating system.
+7. Configure your development environment as described [here](https://us4useu.github.io/arrus-toolkit/content/installation/index.html#application-programming-interface-arrus). 
+
+
+If, for any reason, a firmware update is required, please follow the instructions provided [here](https://us4useu.github.io/arrus-toolkit/content/installation/index.html#installing-software-components-separately).
+Always ensure that compatible software, firmware, and hardware components are used; otherwise, an error message will appear.
+
 
 Links to the ARRUS™ SDK package documentation are available
 [here](https://github.com/us4useu/arrus).
@@ -86,30 +121,23 @@ Links to the ARRUS™ SDK package documentation are available
 (setup/system-running)=
 ## Running the acquisition
 
-:::{CAUTION}
-Never unplug the probe from the device during transmission, and never transmit with no load!
-This can result in damage to the transmission unit of the us4R-lite™.
-:::
+Before first run of the acquisition, you must ensure that:
 
-Before first use of the **us4R-lite™**, you must ensure that:
-
-* the device has been set up according to Manufacturer guidelines,
-* proper probe adapter has been installed,
-* an external host PC have been connected to the **us4R-lite™**.
+* The device has been set up according to the manufacturer's guidelines (section...), and all steps described in the section from... to... are ensured.
+* Proper probe adapter has been installed.
+* An external host PC has been prepared (all required software and drivers are installed).
 
 Step-by-step instruction:
 
-1.  Connect the supplied power adapter to the **us4R-lite™** (DC jack) and to the mains (the power cable).
-1.  Connect the ultrasound probe.
-1.  Now, turn on the device by clicking the ON/OFF button.
-1.  Turn on the host PC
+1. Connect the supplied power adapter to the **us4R-lite™** (DC jack) and to the mains (the power cable).
+2. Connect the ultrasound probe.
+3. Connect the **us4R-lite™** to the host PC
+4. Now, turn on the **us4R-lite™** device by clicking the ON/OFF button.
+5. Turn on the host PC
+6. Before login check the color of the LEDs on the back of the PCIe card (for PCIe connection only) -- 2 LED indicators should light up GREEN, see {numref}`host-PC-back-rl-2024+cablesLEDON`.
 
-    a.  Before login check the color of the LEDs on the back of the PC
-        -- all 2 LED indicators (from the top and/or bottom card)
-        should light up GREEN, see {numref}`pcie-cables-1234`.
-
-```{figure} img/pcie-cables-1234.jpg
-:name: pcie-cables-1234
+```{figure} img/host-PC-back-rl-2024+cablesLEDON.png
+:name: host-PC-back-rl-2024+cablesLEDON
 :alt: The PCIe card interface.
 
 The host PC: the PCIe card interface with 2 connected PCIe cables and the PCIe links LEDs.
@@ -117,29 +145,21 @@ The host PC: the PCIe card interface with 2 connected PCIe cables and the PCIe l
 
 >IMPORTANT NOTE: If any of the LED indicators light up ORANGE, please reboot the PC. Keep rebooting until all LEDs are green.
 
-5.  Log in to the host PC (in the case where us4us provides the host PC) using the following login and password:
+7.  Make sure to check that the device and its software is starting correctly. If any errors are signaled by the device or messages displayed on screen, proceed according to instructions.
 
-    `user: us4us`
-    
-    `password: us4us`
-
-6.  Make sure to check that the device and its software is starting
-    correctly. If any errors are signaled by the device or messages
-    displayed on screen, proceed according to instructions.
-
-7.  Install the ARRUS package according to instructions available
-    [here](https://us4useu.github.io/arrus-toolkit/content/installation/index.html#python) (if it is not already installed).
-
-8.  Follow the instruction on how to run "plane wave imaging" example script available [here](https://us4useu.github.io/arrus-toolkit/content/installation/index.html#python). Please remember to use the provided configuration file.
+8.  Follow the instruction on how to run "plane wave imaging" example script on your setup. available [here](https://us4useu.github.io/arrus-toolkit/content/installation/index.html#python). Please remember to use the provided configuration file.
 
 9.  Once the test is over, close the image window.
 
-10. The host PC can now be turned off by shutting down the Windows
-    system as normal.
+10. The host PC can now be turned off by shutting down the operational system as normal.
 
 11. Turn off the **us4R-lite™** by pressing the ON/OFF button.
 
-12. After 5 seconds turn off the Power Switch.
+
+:::{CAUTION}
+Never unplug the probe from the device during transmission, and never transmit with no load!
+This can result in damage to the transmission unit of the us4R-lite™.
+:::
 
 ## Setting High-Voltage (HV) supply for the transmitters
 

@@ -128,7 +128,7 @@ Back-side of the us4R-lite™, Model: RL-2024-PCIe device with PCIe interface.
 
 **PLEASE NOTE:** External devices should be connected via cables no longer than 3m.
 
-(power-switch)=
+(hardware/power-switch)=
 ## Power adapter and ON/OFF button
 
 The power adapter connection is shown in the picture below ({numref}`us4r-lite-pcie-power-rl-2024`).
@@ -167,14 +167,17 @@ A video instruction on how to change the probe adapter is available on our YouTu
 Using non-compatible or broken probes can result in damage to the transmission section of the us4R-lite™!
 Such damages are NOT covered under the warranty!
 ```
-
+(hardware/connecting-hostPC)=
 ## Connecting the host PC
 The **us4R-lite™** requires an external host PC (desktop / notebook) with a display to function correctly. The only way to connect the **us4R-lite™** device to the PC is through the PCIe or Thunderbolt cables (depending on the model).
+
+So far, it is required that the host PC be equipped with an NVIDIA GPU with CUDA Toolkit installed and, for PCIe connections, an available PCIe Gen3 x8 slot to install the provided PCIe host adapter card.
 
 
 
 ### PCIe interface
 
+(hardware/pcie-ports)=
 **PCIe ports & PCIe cables** <br> 
 The **us4R-lite™** models: RL_2021 and RL-2024-PCIe are equipped with 2x PCIe gen3 x4 ports on the back of the device.
 
@@ -193,7 +196,7 @@ sure that the connector is latched properly ({numref}`us4r-lite-pcie-back-rl-202
 The **us4R-lite™** models equiped with the PCIe interface are also provided with compatible PCIe host adapter card that should be properly installed in the host PC controller before the first use. 
 
 The host PC must have an empty PCIe gen3 x8 slot to install the provided
-PCIe host adapter cards ({numref}`pcie-adapter-gen3`). 
+PCIe host adapter card ({numref}`pcie-adapter-gen3`). 
 
 ```{figure} img/pcie-adapter-gen3.jpg
 :name: pcie-adapter-gen3
@@ -201,7 +204,7 @@ PCIe host adapter cards ({numref}`pcie-adapter-gen3`).
 Provided PCIe host adapter card for the us4R-lite-PCIe.
 ```
 
-To proper install the PXH832 PCIe adapter cards follow the instructions available [here](https://www.dolphinics.com/download/PX/OPEN_DOC/PXH832_users_guide.pdf). Ensure that the DIP switch configuration shown in Table 3 of the referenced document is set to Transparent Host, Four x4 Ports.
+To proper install the PXH832 PCIe adapter cards follow the instructions available [here](https://www.dolphinics.com/download/PX/OPEN_DOC/PXH832_users_guide.pdf). Ensure that the DIP switch configuration shown in Table 3 of the referenced document is set to Transparent Host, Four x4 Ports (all switches in the position closer to the PCIe connector.).
 
 **The proper order of the PCIe cables doesn't matter if you configure your DIP-Switches on the PXH832 card properly!**
 
