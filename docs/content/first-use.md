@@ -147,7 +147,8 @@ The host PC: the PCIe card interface with 2 connected PCIe cables and the PCIe l
 
 7.  Make sure to check that the device and its software is starting correctly. If any errors are signaled by the device or messages displayed on screen, proceed according to instructions.
 
-8.  Follow the instruction on how to run "plane wave imaging" example script on your setup. available [here](https://us4useu.github.io/arrus-toolkit/content/installation/index.html#python). Please remember to use the provided configuration file.
+8.  Follow the instruction on how to run "plane wave imaging" example script on your setup. For Python examples are provided [here](https://github.com/us4useu/arrus/tree/master/api/python/examples) and described [here](https://us4useu.github.io/arrus-docs/releases/current/python/content/examples.html). For Matlab you can find example scripts [here](https://github.com/us4useu/arrus/tree/master/api/matlab/examples).
+Please remember to use the provided configuration file!
 
 9.  Once the test is over, close the image window.
 
@@ -159,6 +160,11 @@ The host PC: the PCIe card interface with 2 connected PCIe cables and the PCIe l
 :::{CAUTION}
 Never unplug the probe from the device during transmission, and never transmit with no load!
 This can result in damage to the transmission unit of the us4R-lite™.
+:::
+
+:::{CAUTION}
+Running the **us4R-lite™** device with the proper configuration file is crucial. Always ensure that the parameters entered there are correct and aligned with the intended ones, especially those concerning the probe adapter and the desired transmission voltage.
+In extreme cases, using incorrect parameters can result in damage to the transmission unit of the **us4R-lite™**
 :::
 
 ## Setting High-Voltage (HV) supply for the transmitters
