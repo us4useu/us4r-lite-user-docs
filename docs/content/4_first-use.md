@@ -63,7 +63,9 @@ Several adapters are available for use with the **us4R-lite™** system. Please 
 
 Always keep the ultrasound probe connected to the **us4R-lite™** system during operation. It is required for the proper functioning of the device.
 
-:::{CAUTION} Never unplug the probe from the device during transmission, and never transmit with no load! This can result in damage to the transmission unit of the us4R-lite™. :::
+:::{Caution} 
+Never unplug the probe from the device during transmission, and never transmit with no load! This can result in damage to the transmission unit of the us4R-lite™. 
+:::
 
 
 (set-up/System setup)=
@@ -95,9 +97,10 @@ User has to prepare his host PC only:
 package etc. 
 You can see all possible configurations, with those mentioned earlier marked in the {numref}`arrus-package`
 
-```{figure} img/arrus-package.png
+```{figure} img/arrus_package.png
 :name: arrus-package
 :alt: ARRUS Assets
+:width: 60 %
 
 An example of the list of ARRUS packages available for download with ARRUS v0.10.4.
 ```
@@ -139,6 +142,7 @@ Step-by-step instruction:
 ```{figure} img/host-PC-back-rl-2024+cablesLEDON.png
 :name: host-PC-back-rl-2024+cablesLEDON
 :alt: The PCIe card interface.
+:width: 60 %
 
 The host PC: the PCIe card interface with 2 connected PCIe cables and the PCIe links LEDs.
 ```

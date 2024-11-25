@@ -25,22 +25,22 @@ Peripheral mode with external Host PC connected through PCIe, us4R-lite™, Mode
 The table below summarizes all hardware models of the us4R-lite™:
 
 :::{list-table} us4R-lite™ Hardware Models
-:header-rows: 1
+    :widths: 20 20 20
+    :header-rows: 1
 
 *   - Model
     - Options
     - External Interface
-*   - RL_2020
-         <span style="color:red">(EOL)</span>
+*   - RL_2020 <span style="color:red">(EOL)</span>
     - +GPU (NO LONGER SUPPORTED)
-    - Thunderbolt-3
-*   - RL_2021
-        (OBSOLETE)
+    - Thunderbolt 3
+*   - RL_2021 (OBSOLETE)
     - none
-    - PCIe (2x gen3 4-lanes)
+    - PCIe (2x gen3 4 lanes)
 *   - RL-2024-PCIe
     - +HF
-    - PCIe (2x gen3 4-lanes)
+    - PCIe (2x gen3 4 lanes)
+
 :::
 
 (hardware/probe-adapters)=
@@ -50,7 +50,7 @@ Us4R-lite™ research system features changeable ultrasound probe adapter.
 Currently, we offer the following adapters:
 
 :::{list-table} Probe adapters 
-   :widths: 20 20 50 20 20
+   :widths: 20 20 20 50 40
    :header-rows: 1
 
 *   - Connector <br>
@@ -94,8 +94,8 @@ Currently, we offer the following adapters:
     RCA compatible <br>
     _[up to 256-element probes (linear/array/convex/row-column)]_
     - 
-        - GE..LLL
-        - RCA..LLL
+        - GE L3-9i-D
+        - RCA 128x128 & 64x64
 
 :::
 
