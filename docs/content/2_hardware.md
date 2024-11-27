@@ -175,9 +175,9 @@ So far, it is required that the host PC be equipped with an NVIDIA GPU with CUDA
 
 
 
+(hardware/pcie-ports)=
 ### PCIe interface
 
-(hardware/pcie-ports)=
 **PCIe ports & PCIe cables** <br> 
 The **us4R-lite™** models: RL_2021 and RL-2024-PCIe are equipped with 2x PCIe gen3 x4 ports on the back of the device.
 
