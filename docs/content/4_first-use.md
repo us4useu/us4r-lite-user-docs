@@ -88,34 +88,8 @@ from the HV power supply during transmit during normal work conditions.
 The device is delivered with the current stable version of the firmware pre-installed.
 
 User has to prepare his host PC only:
-1. Check and install the PCIe adapter card (for models with the PCIe interface) as described in the Section ({numref}`Section %s <hardware/pcie-ports>`.)
-2. Ensure that your operating system meets the requirements described [here](https://us4useu.github.io/arrus-toolkit/content/installation/index.html#requirements)
-3. Check if CUDA Toolkit in the compatible version is installed on your computer. You can check compatible CUDA Toolkit versions with our current stable varsion in the table [here](https://us4useu.github.io/arrus-toolkit/content/installation/index.html#installing-software-components-separately), and download required CUDA Toolkit from the NVIDIA download page [here] https://developer.nvidia.com/cuda-toolkit-archive.
-4. Download the current stable version of the Drivers from the table [here](https://us4useu.github.io/arrus-toolkit/content/installation/index.html#installing-software-components-separately). For Linux drivers, just use the provided link. For Windows drivers, contact us4us support for the newest version.
-5. Install the Drivers. For Linux use [these](https://us4useu.github.io/arrus-toolkit/content/installation/index.html#linux) instructions, for Windows follow [these]https://us4useu.github.io/arrus-toolkit/content/installation/index.html#windows. This step requires connecting the power supply and the **us4R-lite™** device to the host PC, as described in the sections (see: {numref}`Section %s <hardware/power-switch>` and {numref}`Section %s <hardware/connecting-hostPC>`).
-6.  Download the current stable version of the ARRUS from the table [here](https://us4useu.github.io/arrus-toolkit/content/installation/index.html#installing-software-components-separately). From the list of Assets available for each ARRUS version, choose the one that matches your application. e.g. for Windows environment and Python 3.9 you should download arrus-0.10.4-cp39-cp39-linux_x86_64.whl package, for Linux and C++ you should download arrus_cpp-v0.10.4_linux_x86_64.zip
-package etc. 
-You can see all possible configurations, with those mentioned earlier marked in the {numref}`arrus-package`
-
-```{figure} img/arrus_package.png
-:name: arrus-package
-:alt: ARRUS Assets
-:width: 60 %
-
-An example of the list of ARRUS packages available for download with ARRUS v0.10.4.
-```
-
-The designations are interpreted as follows:
-- cp stands for Python, e.g., cp310 means Python 3.10, cp39 means Python 3.9, and so on.
-- cpp stands for C++.
-- matlab stands for Matlab.
-- win or linux indicate the operating system.
-7. Configure your development environment as described [here](https://us4useu.github.io/arrus-toolkit/content/installation/index.html#application-programming-interface-arrus). 
-
-
-If, for any reason, a firmware update is required, please follow the instructions provided [here](https://us4useu.github.io/arrus-toolkit/content/installation/index.html#installing-software-components-separately).
-Always ensure that compatible software, firmware, and hardware components are used; otherwise, an error message will appear.
-
+1. Check and install the PCIe adapter card (for models with the PCIe interface) as described in the {numref}`Section %s <hardware/pcie-ports>`.
+2. Install the required software according to instructions provided [here](https://us4useu.github.io/arrus-toolkit/content/installation/index.html).
 
 Links to the ARRUS™ SDK package documentation are available
 [here](https://github.com/us4useu/arrus).
