@@ -23,7 +23,7 @@ The us4R-lite™ portable ultrasound platform.
 The portable ultrasound research platform **(us4R-lite™)** is an ultrasonic system intended to be used in an uncontrolled laboratory setting for ultrasound R&D, in particular for real-time implementation of new imaging modalities and algorithms in biomedical and non-destructive testing applications. 
 
 :::{Important}
-The system is not a medical device and is not intended for use on humans.
+The system is not a medical device and is not intended for use on humans. Use on humans requires additional risk analysis and other actions performed by the system user to ensure compliance with applicable regulatory and safety standards.
 :::
 
 :::{Attention}

@@ -171,7 +171,7 @@ Such damages are NOT covered under the warranty!
 ## Connecting the host PC
 The **us4R-lite™** requires an external host PC (desktop / notebook) with a display to function correctly. The only way to connect the **us4R-lite™** device to the PC is through the PCIe or Thunderbolt cables (depending on the model).
 
-So far, it is required that the host PC be equipped with an NVIDIA GPU with CUDA Toolkit installed and, for PCIe connections, an available PCIe Gen3 x8 slot to install the provided PCIe host adapter card.
+So far, it is required that the host PC be equipped with an NVIDIA GPU with CUDA Toolkit installed and, for PCIe connections, an available PCIe gen3 x16 (or x8, but open-ended) slot to install the provided PCIe host adapter card.
 
 
 
@@ -195,10 +195,10 @@ sure that the connector is latched properly ({numref}`us4r-lite-pcie-back-rl-202
 **PCIe adapter card** <br>
 The **us4R-lite™** models equiped with the PCIe interface are also provided with compatible PCIe host adapter card that should be properly installed in the host PC controller before the first use. 
 
-The host PC must have an empty PCIe gen3 x8 slot to install the provided
+The host PC must have an empty PCIe gen3 x16 (or x8, but open-ended) slot to install the provided
 PCIe host adapter card ({numref}`pcie-adapter-gen3`). 
 
-```{figure} img/pcie-adapter-gen3.jpg
+```{figure} img/pcie-adapter-gen3b.jpg
 :name: pcie-adapter-gen3
 :width: 60 %
 Provided PCIe host adapter card for the us4R-lite-PCIe.

@@ -6,7 +6,7 @@
 The **us4R-lite™** device (with probe adapter)
 - PCIe, Model: RL-2024-PCIe:
   - 1x PCIe host adapter card
-  - 4x PCIe cable
+  - 2x PCIe cable
   - 1x power adapter AC/DC
 - Thunderbolt, Model: RL_2020:
   - 1x Thunderbolt cable
@@ -17,7 +17,7 @@ The **us4R-lite™** device (with probe adapter)
 ## Technical data and Detailed specification
 
 :::{list-table} 
-:widths: 15 35
+:widths: 10 35
 :align: left
 * - **Transmit**
   - 

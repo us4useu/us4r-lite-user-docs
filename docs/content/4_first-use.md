@@ -1,5 +1,5 @@
 # First Use
-
+(set-up/unboxing)=
 ## Unboxing and setting-up the device
 
 The device is delivered to the user pre-assembled and boxed.
@@ -55,7 +55,7 @@ A loss of mains power during operation will result in an immediate shutdown of t
 To shut down the us4R-lite™ in case of malfunction, remove the mains power cable from the electrical socket. The electrical sockets should be situated in proximity to the device and be easily accessible.
 :::
 
-(set-up/system-setup)=
+
 (set-up/probe-adapters)=
 ## Probe Adapters
 
@@ -68,7 +68,7 @@ Never unplug the probe from the device during transmission, and never transmit w
 :::
 
 
-(set-up/System setup)=
+(set-up/system-setup)=
 ## System setup
 
 The **us4R-lite™** should be positioned so that operation is safe --- i.e. on a stable, flat surface in a place with no risk of spillage on the device and away from the sources of interference and radiation. 
@@ -91,6 +91,10 @@ User has to prepare his host PC only:
 1. Check and install the PCIe adapter card (for models with the PCIe interface) as described in the {numref}`Section %s <hardware/pcie-ports>`.
 2. Install the required software according to instructions provided [here](https://us4useu.github.io/arrus-toolkit/content/installation/index.html).
 
+
+If, for any reason, a firmware update is required, please follow the instructions provided [here](https://us4useu.github.io/arrus-toolkit/content/installation/index.html#firmware).
+Always ensure that compatible software, firmware, and hardware components are used; otherwise, when running the examples, a version incompatibility message for the software and firmware will appear.
+
 Links to the ARRUS™ SDK package documentation are available
 [here](https://github.com/us4useu/arrus).
 
@@ -100,7 +104,7 @@ Links to the ARRUS™ SDK package documentation are available
 
 Before first run of the acquisition, you must ensure that:
 
-* The device has been set up according to the manufacturer's guidelines (section...), and all steps described in the section from... to... are ensured.
+* The device has been set up according to the manufacturer's guidelines from {numref}`Section %s <guidelines>`, and all steps described in the sections from {numref}`Section %s <set-up/unboxing>` to {numref}`Section %s <setup/software-installation>` are ensured.
 * Proper probe adapter has been installed.
 * An external host PC has been prepared (all required software and drivers are installed).
 
@@ -110,7 +114,7 @@ Step-by-step instruction:
 2. Connect the ultrasound probe.
 3. Connect the **us4R-lite™** to the host PC
 4. Now, turn on the **us4R-lite™** device by clicking the ON/OFF button.
-5. Turn on the host PC
+5. Turn on the host PC (It is crucial for proper functioning to turn on the **us4R-lite™** prior to turning on the host PC.)
 6. Before login check the color of the LEDs on the back of the PCIe card (for PCIe connection only) -- 2 LED indicators should light up GREEN, see {numref}`host-PC-back-rl-2024+cablesLEDON`.
 
 ```{figure} img/host-PC-back-rl-2024+cablesLEDON.png
@@ -121,12 +125,12 @@ Step-by-step instruction:
 The host PC: the PCIe card interface with 2 connected PCIe cables and the PCIe links LEDs.
 ```
 
->IMPORTANT NOTE: If any of the LED indicators light up ORANGE, please reboot the PC. Keep rebooting until all LEDs are green.
+>IMPORTANT NOTE: If any of the LED indicators light up ORANGE, please reboot the PC. Keep rebooting until both LEDs turn green.
 
 7.  Make sure to check that the device and its software is starting correctly. If any errors are signaled by the device or messages displayed on screen, proceed according to instructions.
 
-8.  Follow the instruction on how to run "plane wave imaging" example script on your setup. For Python examples are provided [here](https://github.com/us4useu/arrus/tree/master/api/python/examples) and described [here](https://us4useu.github.io/arrus-docs/releases/current/python/content/examples.html). For Matlab you can find example scripts [here](https://github.com/us4useu/arrus/tree/master/api/matlab/examples).
-Please remember to use the provided configuration file!
+8.  Follow the instruction on how to run "plane wave imaging" example script on your setup. Python examples are provided [here](https://github.com/us4useu/arrus/tree/master/api/python/examples) and described [here](https://us4useu.github.io/arrus-docs/releases/current/python/content/examples.html). For Matlab you can find example scripts [here](https://github.com/us4useu/arrus/tree/master/api/matlab/examples).
+**Please remember to use the provided configuration file (.prototxt)!**
 
 9.  Once the test is over, close the image window.
 
