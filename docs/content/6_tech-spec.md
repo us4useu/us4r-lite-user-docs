@@ -26,7 +26,7 @@ The **us4R-lite™** device (with probe adapter)
 * - Transmit frequency
   - 1MHz to 20MHz (Model: RL-2020); 1MHz to 30MHz (Model: RL-2024-PCIe)
 * - Tx time delay resolution
-  - up to 7 .7 ns (depends on the system clock)
+  - 7.7 ns (for standard system clock of 130MHz)
 * - Programmable TX voltage
   - up to 180Vpp (±90V) 
 * - TX pulsers levels
@@ -36,7 +36,7 @@ The **us4R-lite™** device (with probe adapter)
 * - TX function
   - Possibility of generating pseudo-arbitrary transmit waveforms
 * - Pulse repetition frequency
-  - up to 20 kHz (depends on the other parameters and loading conditions)
+  - up to 20kHz (depends on the other parameters and loading conditions)
 * - **Receive**
   - 
 * - Number of channels
@@ -53,7 +53,7 @@ The **us4R-lite™** device (with probe adapter)
     - Total signal chain gain: 54 dB (max) 
     - TGC update rate 1MHz
 * - Data sampling
-  - 14-bit @ 65MSPS  /  16-bit @ 120MSPS
+  - 14-bit @ 65MSPS (standard) / 16-bit @ 120MSPS (HF version)
 * - Raw data buffer
   - up to 128MB per channel
 * - **External synchronization**
@@ -94,7 +94,7 @@ The **us4R-lite™** device (with probe adapter)
   - 
     - INPUT: 120V,60Hz / 230V,50Hz ±10%
     - OUTPUT: 19VDC, 4.74A
-    - The us4R-liteTM must be supplied from the source that meets IEC Class II and NEC Class 2 power supply requirements.
+    - The us4R-lite™ must be supplied from the source that meets IEC Class II and NEC Class 2 power supply requirements.
     - Dedicated FSP090-RBCM1 power supply is delivered with the device
 * - Max power consumption
   - 90W
