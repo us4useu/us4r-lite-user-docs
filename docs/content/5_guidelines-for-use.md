@@ -5,7 +5,7 @@
 ## General Guidelines
 
 :::{Attention}
-The device can only be operated by users with a base knowledge of programming and fundamental PC skills. It is essential that users read the full text of the instruction manual before operating the device.
+The device can only be operated by users with a base knowledge of programming and fundamental PC skills. It is essential that users read the instruction manual in full before operating the device.
 :::
 
 :::{Attention}
