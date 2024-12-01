@@ -4,7 +4,7 @@
 (system-overview)=
 ## System Overview
 
-The us4R-lite™ system is an ultrasound research device designed for transmission and acquisition of ultrasound signals using connected piezoceramic probes/transducers.
+The us4R-lite™ system is an ultrasound research device designed for transmission and acquisition of ultrasound signals using connected piezoceramic probes/transducers (use with pMUT/cMUT is feasible but may require a dedicated circuitry -- please consult us4us).
 
 **The us4R-lite™ is a peripheral device, so in addition to an ultrasound probe, it always requires an external Host PC to work.**
 
@@ -221,10 +221,10 @@ Back of the host PC with PCIe host adapter card installed and PCIe cables connec
 The **us4R-lite™** provides four digital I/O signals in the LVTTL 3.3V
 standard available on the SMA-type connectors:
 
-1.  CLOCK IN -- input of an external reference clock signal.
+1.  CLOCK IN -- input of an external 10MHz reference clock signal.
 2.  TRIG IN -- input of an external trigger signal -- can be used to
     synchronize transmit events with other devices/systems.
-3.  CLOCK OUT -- output of an internal reference clock signal.
+3.  CLOCK OUT -- output of an internal 10MHz reference clock signal.
 4.  TRIG OUT -- output of an internal trigger signal -- can be used to synchronize other external devices/systems with the **us4R-lite™**.
 
 ```{figure} img/us4r-lite-pcie-back-io-rl-2024.jpg
