@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2. Hardware Description &mdash; us4R-lite™ User Manual  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=b3ba4146"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="3. Software Description" href="3_software.html" />
+    <link rel="prev" title="1. Introduction" href="1_introduction.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/us4us-logo-white.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="1_introduction.html">1. Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Hardware Description</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#system-overview">2.1. System Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hardware-models">2.2. Hardware Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ultrasound-probe-adapters">2.3. Ultrasound Probe Adapters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#inputs-and-outputs">2.4. Inputs and outputs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#power-adapter-and-on-off-button">2.5. Power adapter and ON/OFF button</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#connecting-ultrasound-probes">2.6. Connecting ultrasound probes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#connecting-the-host-pc">2.7. Connecting the host PC</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pcie-interface">2.7.1. PCIe interface</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#digital-i-o-ports">2.8. Digital I/O ports</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="3_software.html">3. Software Description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_first-use.html">4. First Use</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5_guidelines-for-use.html">5. Guidelines for Use</a></li>
+<li class="toctree-l1"><a class="reference internal" href="6_tech-spec.html">6. Technical Specification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="7_references.html">7. REFERENCES</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">us4R-lite™ User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">2. </span>Hardware Description</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/content/2_hardware.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="hardware-description">
+<span id="hardware-general"></span><h1><span class="section-number">2. </span>Hardware Description<a class="headerlink" href="#hardware-description" title="Permalink to this heading"></a></h1>
+<section id="system-overview">
+<span id="id1"></span><h2><span class="section-number">2.1. </span>System Overview<a class="headerlink" href="#system-overview" title="Permalink to this heading"></a></h2>
+<p>The us4R-lite™ system is an ultrasound research device designed for transmission and acquisition of ultrasound signals using connected piezoceramic probes/transducers (use with pMUT/cMUT is feasible but may require a dedicated circuitry – please consult us4us).</p>
+<p><strong>The us4R-lite™ is a peripheral device, so in addition to an ultrasound probe, it always requires an external Host PC to work.</strong></p>
+<p>The us4R-lite™ is connected using a Thunderbolt-3 (<a class="reference internal" href="#peripheral-notebook"><span class="std std-numref">Fig. 2.1</span></a>) or PCIe cable (<a class="reference internal" href="5_guidelines-for-use.html#peripheral-desktop"><span class="std std-numref">Fig. 5.1</span></a>) to a PC/notebook running ARRUS™ SDK.
+An open-source ARRUS™ SDK (Software Development Kit) is provided to be installed and run on the host PC to execute User’s applications/scripting for device configuration, data acquisition, and custom processing.</p>
+<figure class="align-default" id="peripheral-notebook">
+<img alt="../_images/peripheral-notebook.png" src="../_images/peripheral-notebook.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1 </span><span class="caption-text">Peripheral mode with external Host PC connected through Thunderbolt, us4R-lite™, Model: RL-2020 <span style="color:red">(EOL)</span></span><a class="headerlink" href="#peripheral-notebook" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="peripheral-desktop">
+<img alt="../_images/peripheral-desktop.png" src="../_images/peripheral-desktop.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.2 </span><span class="caption-text">Peripheral mode with external Host PC connected through PCIe, us4R-lite™, Model: RL-2021</span><a class="headerlink" href="#peripheral-desktop" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="hardware-models">
+<span id="hardware-versions"></span><h2><span class="section-number">2.2. </span>Hardware Models<a class="headerlink" href="#hardware-models" title="Permalink to this heading"></a></h2>
+<p>The table below summarizes all hardware models of the us4R-lite™:</p>
+<table class="docutils align-default" id="id2">
+<caption><span class="caption-number">Table 2.1 </span><span class="caption-text">us4R-lite™ Hardware Models</span><a class="headerlink" href="#id2" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Model</p></th>
+<th class="head"><p>Options</p></th>
+<th class="head"><p>External Interface</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>RL_2020 <span style="color:red">(EOL)</span></p></td>
+<td><p>+GPU (NO LONGER SUPPORTED)</p></td>
+<td><p>Thunderbolt 3</p></td>
+</tr>
+<tr class="row-odd"><td><p>RL_2021 (OBSOLETE)</p></td>
+<td><p>none</p></td>
+<td><p>PCIe (2x gen3 4 lanes)</p></td>
+</tr>
+<tr class="row-even"><td><p>RL-2024-PCIe</p></td>
+<td><p>+HF</p></td>
+<td><p>PCIe (2x gen3 4 lanes)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="ultrasound-probe-adapters">
+<span id="hardware-probe-adapters"></span><h2><span class="section-number">2.3. </span>Ultrasound Probe Adapters<a class="headerlink" href="#ultrasound-probe-adapters" title="Permalink to this heading"></a></h2>
+<p>Us4R-lite™ research system features changeable ultrasound probe adapter.
+Currently, we offer the following adapters:</p>
+<table class="docutils align-default" id="id3">
+<caption><span class="caption-number">Table 2.2 </span><span class="caption-text">Probe adapters</span><a class="headerlink" href="#id3" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 33%" />
+<col style="width: 27%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Connector <br>
+Type</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Rev</p></th>
+<th class="head"><p>Supported Probes</p></th>
+<th class="head"><p>List of tested probes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>QLC-260</p></td>
+<td><p>EPA</p></td>
+<td><p>3.0</p></td>
+<td><p>ESAOTE compatible <br>
+<em>up to 192-element probes <br>
+(linear/array/convex)</em></p></td>
+<td><ul class="simple">
+<li><p>SL1543 linear-array</p></li>
+<li><p>AL2442 linear-array</p></li>
+<li><p>SP2430 phased-array</p></li>
+<li><p>AC2541 convex-array</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>DL1-156</p></td>
+<td><p>PAU</p></td>
+<td><p>1.0</p></td>
+<td><p>ULTRASONIX compatible <br>
+<em>[up to 128-element probes (linear/array/convex)]</em></p></td>
+<td><ul class="simple">
+<li><p>L14-5/38 linear-array</p></li>
+<li><p>L9-4/38 linear-array</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>DL5-260</p></td>
+<td><p>VPA</p></td>
+<td><p>1.0</p></td>
+<td><p>ATL / Philips compatible <br>
+<em>[up to 128-element probes (linear/array/convex)]</em><br>
+<em>in-probe MUX is not supported!</em></p></td>
+<td><ul class="simple">
+<li><p>L7-4/38 linear-array</p></li>
+<li><p>C5-2 convex-array</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>DLP-408</p></td>
+<td><p>DLPx</p></td>
+<td><p>2.0</p></td>
+<td><p>GE compatible <br>
+RCA compatible <br>
+<em>[up to 256-element probes (linear/array/convex/row-column)]</em></p></td>
+<td><ul class="simple">
+<li><p>GE L3-9i-D</p></li>
+<li><p>RCA 128x128 &amp; 64x64</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>If you cannot find the adapter that suits your application, it is possible to order a custom probe adapter from the us4us®. Please contact us at <a class="reference external" href="mailto:support&#37;&#52;&#48;us4us&#46;eu">support<span>&#64;</span>us4us<span>&#46;</span>eu</a> to discuss the options.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The system is supplied with one selected probe adapter.
+Additional adapters can be purchased separately.</p>
+</div>
+</section>
+<section id="inputs-and-outputs">
+<span id="inputs-outputs"></span><h2><span class="section-number">2.4. </span>Inputs and outputs<a class="headerlink" href="#inputs-and-outputs" title="Permalink to this heading"></a></h2>
+<p>The <strong>us4R-lite™</strong> is equipped with:</p>
+<ul class="simple">
+<li><p>a single probe connector,</p></li>
+<li><p>2x PCIe ports (see <a class="reference internal" href="#us4r-lite-pcie-back-rl-2024"><span class="std std-numref">Fig. 2.3</span></a>) or Thunderbolt-3 port ,</p></li>
+<li><p>2x digital inputs (TRIG-IN, CLK-IN),</p></li>
+<li><p>2x digital outputs (TRIG-OUT, CLK-OUT),</p></li>
+<li><p>1x DC power input.</p></li>
+</ul>
+<figure class="align-default" id="us4r-lite-pcie-back-rl-2024">
+<a class="reference internal image-reference" href="../_images/us4r-lite-pcie-back-rl-2024.jpg"><img alt="Back-side of the us4R-lite™ device with PCIe interface." src="../_images/us4r-lite-pcie-back-rl-2024.jpg" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.3 </span><span class="caption-text">Back-side of the us4R-lite™, Model: RL-2024-PCIe device with PCIe interface.</span><a class="headerlink" href="#us4r-lite-pcie-back-rl-2024" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p><strong>PLEASE NOTE:</strong> External devices should be connected via cables no longer than 3m.</p>
+</section>
+<section id="power-adapter-and-on-off-button">
+<span id="hardware-power-switch"></span><h2><span class="section-number">2.5. </span>Power adapter and ON/OFF button<a class="headerlink" href="#power-adapter-and-on-off-button" title="Permalink to this heading"></a></h2>
+<p>The power adapter connection is shown in the picture below (<a class="reference internal" href="#us4r-lite-pcie-power-rl-2024"><span class="std std-numref">Fig. 2.4</span></a>).</p>
+<figure class="align-default" id="us4r-lite-pcie-power-rl-2024">
+<a class="reference internal image-reference" href="../_images/us4r-lite-pcie-power-rl-2024.jpg"><img alt="The us4R-lite™, model RL-2024-PCIe DC power connector and ON/OFF button." src="../_images/us4r-lite-pcie-power-rl-2024.jpg" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.4 </span><span class="caption-text">The us4R-lite™, model RL-2024-PCIe DC power connector and ON/OFF button.</span><a class="headerlink" href="#us4r-lite-pcie-power-rl-2024" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="connecting-ultrasound-probes">
+<h2><span class="section-number">2.6. </span>Connecting ultrasound probes<a class="headerlink" href="#connecting-ultrasound-probes" title="Permalink to this heading"></a></h2>
+<p>Ultrasound probes require special care, as they can be easily damaged by any impact. The damaged transducers could have internal element short-circuits or open-circuits, both can cause malfunction or even
+breakdown of the <strong>us4R-lite™</strong> transmit circuitry.
+<strong>Therefore, it is vital that the probes are handled with extreme care and defective probes are never connected to the system.</strong></p>
+<p>Probes should be disconnected from the device during the transport.</p>
+<p>The ultrasound probe connector is situated on the top of the device.</p>
+<figure class="align-default" id="us4r-lite-probe-conn">
+<a class="reference internal image-reference" href="../_images/us4r-lite-probe-conn.jpg"><img alt="Top-view of the us4R-lite™ model RL_2020 with probe connector (linear/phase/convex/RCA)." src="../_images/us4r-lite-probe-conn.jpg" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.5 </span><span class="caption-text">Top-view of the us4R-lite™ model RL_2020 with probe connector (linear/phase/convex/RCA).</span><a class="headerlink" href="#us4r-lite-probe-conn" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>A video instruction on how to change the probe adapter is available on our YouTube channel:</p>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=v9DwhbGclBE"><img alt="A picture containing text, electronics, display Description automatically generated" src="../_images/us4r-lite-change-adapter-video.png" /></a></p>
+<p><strong>PLEASE NOTE:</strong> Only a probe prepared and configured for use with the <strong>us4R-lite™</strong> can be connected to the device. For assistance, please contact the Manufacturer.</p>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>Using non-compatible or broken probes can result in damage to the transmission section of the us4R-lite™!
+Such damages are NOT covered under the warranty!</p>
+</div>
+</section>
+<section id="connecting-the-host-pc">
+<span id="hardware-connecting-hostpc"></span><h2><span class="section-number">2.7. </span>Connecting the host PC<a class="headerlink" href="#connecting-the-host-pc" title="Permalink to this heading"></a></h2>
+<p>The <strong>us4R-lite™</strong> requires an external host PC (desktop / notebook) with a display to function correctly. The only way to connect the <strong>us4R-lite™</strong> device to the PC is through the PCIe or Thunderbolt cables (depending on the model).</p>
+<p>So far, it is required that the host PC be equipped with an NVIDIA GPU with CUDA Toolkit installed and, for PCIe connections, an available PCIe gen3 x16 (or x8, but open-ended) slot to install the provided PCIe host adapter card.</p>
+<section id="pcie-interface">
+<span id="hardware-pcie-ports"></span><h3><span class="section-number">2.7.1. </span>PCIe interface<a class="headerlink" href="#pcie-interface" title="Permalink to this heading"></a></h3>
+<p><strong>PCIe ports &amp; PCIe cables</strong> <br>
+The <strong>us4R-lite™</strong> models: RL_2021 and RL-2024-PCIe are equipped with 2x PCIe gen3 x4 ports on the back of the device.</p>
+<p>The PCIe ports are intended for connecting the system to an external host PC using the provided PCIe cables (<a class="reference internal" href="#us4r-lite-pcie-back-rl-2024-cables"><span class="std std-numref">Fig. 2.6</span></a>).</p>
+<figure class="align-default" id="us4r-lite-pcie-back-rl-2024-cables">
+<a class="reference internal image-reference" href="../_images/us4r-lite-pcie-back-rl-2024+cables.jpg"><img alt="../_images/us4r-lite-pcie-back-rl-2024%2Bcables.jpg" src="../_images/us4r-lite-pcie-back-rl-2024%2Bcables.jpg" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.6 </span><span class="caption-text">Back panel of the us4R-lite™ showing the PCIe connectors and properly connected cabling.</span><a class="headerlink" href="#us4r-lite-pcie-back-rl-2024-cables" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>When connecting the PCIe cables you should hear/feel “a click” to be
+sure that the connector is latched properly (<a class="reference internal" href="#us4r-lite-pcie-back-rl-2024-cables"><span class="std std-numref">Fig. 2.6</span></a>).</p>
+<p><strong>PCIe adapter card</strong> <br>
+The <strong>us4R-lite™</strong> models equiped with the PCIe interface are also provided with compatible PCIe host adapter card that should be properly installed in the host PC controller before the first use.</p>
+<p>The host PC must have an empty PCIe gen3 x16 (or x8, but open-ended) slot to install the provided
+PCIe host adapter card (<a class="reference internal" href="#pcie-adapter-gen3"><span class="std std-numref">Fig. 2.7</span></a>).</p>
+<figure class="align-default" id="pcie-adapter-gen3">
+<a class="reference internal image-reference" href="../_images/pcie-adapter-gen3b.jpg"><img alt="../_images/pcie-adapter-gen3b.jpg" src="../_images/pcie-adapter-gen3b.jpg" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.7 </span><span class="caption-text">Provided PCIe host adapter card for the us4R-lite-PCIe.</span><a class="headerlink" href="#pcie-adapter-gen3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>To proper install the PXH832 PCIe adapter cards follow the instructions available <a class="reference external" href="https://www.dolphinics.com/download/PX/OPEN_DOC/PXH832_users_guide.pdf">here</a>. Ensure that the DIP switch configuration shown in Table 3 of the referenced document is set to Transparent Host, Four x4 Ports (all switches in the position closer to the PCIe connector.).</p>
+<p><strong>The proper order of the PCIe cables doesn’t matter if you configure your DIP-Switches on the PXH832 card properly!</strong></p>
+<p>To disconnect the PCIe cables pull the plastic tab at the bottom of the PCIe cable plug (<a class="reference internal" href="#host-pc-back-rl-2024-cables"><span class="std std-numref">Fig. 2.8</span></a>).</p>
+<figure class="align-default" id="host-pc-back-rl-2024-cables">
+<a class="reference internal image-reference" href="../_images/host-PC-back-rl-2024+cables.jpg"><img alt="../_images/host-PC-back-rl-2024%2Bcables.jpg" src="../_images/host-PC-back-rl-2024%2Bcables.jpg" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.8 </span><span class="caption-text">Back of the host PC with PCIe host adapter card installed and PCIe cables connected.</span><a class="headerlink" href="#host-pc-back-rl-2024-cables" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="digital-i-o-ports">
+<h2><span class="section-number">2.8. </span>Digital I/O ports<a class="headerlink" href="#digital-i-o-ports" title="Permalink to this heading"></a></h2>
+<p>The <strong>us4R-lite™</strong> provides four digital I/O signals in the LVTTL 3.3V
+standard available on the SMA-type connectors:</p>
+<ol class="arabic simple">
+<li><p>CLOCK IN – input of an external reference clock signal.</p></li>
+<li><p>TRIG IN – input of an external trigger signal – can be used to
+synchronize transmit events with other devices/systems.</p></li>
+<li><p>CLOCK OUT – output of an internal reference clock signal.</p></li>
+<li><p>TRIG OUT – output of an internal trigger signal – can be used to synchronize other external devices/systems with the <strong>us4R-lite™</strong>.</p></li>
+</ol>
+<figure class="align-default" id="us4r-lite-pcie-back-io-rl-2024">
+<a class="reference internal image-reference" href="../_images/us4r-lite-pcie-back-io-rl-2024.jpg"><img alt="../_images/us4r-lite-pcie-back-io-rl-2024.jpg" src="../_images/us4r-lite-pcie-back-io-rl-2024.jpg" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.9 </span><span class="caption-text">Back panel of the us4R-lite™, model RL-2024-PCIe showing the 4x digital I/O signals</span><a class="headerlink" href="#us4r-lite-pcie-back-io-rl-2024" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="1_introduction.html" class="btn btn-neutral float-left" title="1. Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="3_software.html" class="btn btn-neutral float-right" title="3. Software Description" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, us4us Ltd.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
