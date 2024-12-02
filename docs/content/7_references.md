@@ -109,25 +109,25 @@ General terms and conditions of sale are available [here](https://us4us.eu/asset
 * - **Ver. / Date**
   - **Author**
   - **Change description**
-* - 7 / 25 NOV 2024
+* - 0.7 / 25 NOV 2024
   - BW
   - 
     - sections numbering changed, 
     - model RL-2024-PCIe added, 
     - most of the sections updated
-* - 6 / 18 DEC 2023
+* - 0.6 / 18 DEC 2023
   - BW
   - 
     - sections numbering changed, 
     - model R-2023 added, 
     - basic composition updated, 
     - Section *7.3 Detailed specification* updated
-* - 5 / 02 MAR 2023
+* - 0.5 / 02 MAR 2023
   - BW
   - 
     - Section *8.3 Detailed specification* updated,
     - Section *9 Current limitations* updated
-* - 4 / 05 DEC 2021
+* - 0.4 / 05 DEC 2021
   - BW
   - 
     - Section *5 System setup* updated, 

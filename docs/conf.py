@@ -96,7 +96,7 @@ latex_elements = {
     %\fancyfoot[LO]{{\py@HeaderFamily\nouppercase{\rightmark}}}
     %\fancyfoot[RE]{{\py@HeaderFamily\nouppercase{\leftmark}}}
 % add copyright stuff
-    \fancyfoot[LO,RE]{{\textcopyright\ 2023, us4us Ltd.}}
+    \fancyfoot[LO,RE]{{\textcopyright\ 2024, us4us Ltd.}}
 % again original stuff
     \fancyhead[LE,RO]{{\py@HeaderFamily \@title\sphinxheadercomma\py@release}}
     \renewcommand{\headrulewidth}{0.4pt}
@@ -110,7 +110,7 @@ latex_elements = {
     \renewcommand{\footrulewidth}{0.4pt}
 % add copyright stuff for example at left of footer on odd pages,
 % which is the case for chapter opening page by default
-    \fancyfoot[LO,RE]{{\textcopyright\ 2023, us4us Ltd.}}
+    \fancyfoot[LO,RE]{{\textcopyright\ 2024, us4us Ltd.}}
     }
 \makeatother
 """,

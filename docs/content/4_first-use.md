@@ -26,7 +26,7 @@ The packaging should include:
 
 In case of any missing items, the Customer is advised to contact the Manufacturer.
 
-Before the first use, it is necessary to ensure that the room has ample space, stable ground and 120/230VAC mains power source 
+Before the first use, it is necessary to ensure that the room has ample space, stable ground and 120/230VAC mains power source. 
 %with a protective bondin.
 
 The device should be placed to facilitate a safe operation: the power
