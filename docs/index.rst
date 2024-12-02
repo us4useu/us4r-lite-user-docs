@@ -10,10 +10,10 @@ us4R-lite™ User Manual
    :maxdepth: 2
    :numbered:
 
-   content/introduction
-   content/hardware
-   content/software
-   content/first-use
-   content/guidelines-for-use
-   content/tech-spec
-   content/references
+   content/1_introduction
+   content/2_hardware
+   content/3_software
+   content/4_first-use
+   content/5_guidelines-for-use
+   content/6_tech-spec
+   content/7_references
