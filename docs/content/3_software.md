@@ -7,3 +7,5 @@ ARRUS™ SDK documentation (installation, API, examples, etc.) is available on-l
 
 ARRUS™ SDK /Toolkit documentation >>  [https://us4useu.github.io/arrus-toolkit/](https://us4useu.github.io/arrus-toolkit/)
 
+If required, or upon notification from the manufacturer, software for device updates will also be made available via a publicly accessible website.
+

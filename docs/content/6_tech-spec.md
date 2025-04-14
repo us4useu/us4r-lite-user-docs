@@ -30,7 +30,7 @@ The **us4R-lite™** device (with probe adapter)
 * - Programmable TX voltage
   - up to 180Vpp (±90V) 
 * - TX pulsers levels
-  - 3 (Model: R), 3/5 (Model: R-2023 - depends on configuration)
+  - 3 (Model: RL-2020), 3/5 (Model: RL-2024-PCIe - depends on configuration)
 * - Per-channel programmable
   - center frequency, pulse length, polarity and delay
 * - TX function
@@ -44,7 +44,7 @@ The **us4R-lite™** device (with probe adapter)
 * - Frequency range
   - up to 50MHz
 * - Programmable anti-aliasing filter (cutoff)
-  - 10, 15, 20, 30, 35, 50 MHz 
+  - 10, 15, 20, 30, 35, 40, 50, 60 MHz (depends on configuration)
 * - Amplifier gain
   - 
     - LNA with programmable gain: 24, 18, 12 
