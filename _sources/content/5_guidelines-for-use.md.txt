@@ -78,8 +78,8 @@ The device has no elements sensitive to a 50Hz/60Hz magnetic field.
 
 ## Other conditions and recommendations
 
-It is advised that the device operate at room temperature and at
-moderate humidity. Any mechanical shocks should be avoided.
+The device should be operated at room temperature and under moderate humidity conditions. 
+Avoid exposing the device to mechanical shocks or excessive vibrations, as these may affect performance or cause damage.
 
 :::{Caution}
 The Manufacturer recommends that you contact the service and perform a technical inspection (at the Manufacturer or remotely) 
@@ -99,6 +99,12 @@ end of life. To avoid release of such substances into the environment
 and to reduce the use of natural resources, we encourage you to recycle
 this product in an appropriate system that will ensure that most of the
 materials are reused or recycled appropriately.
+
+*Expected Service Life*
+
+*The expected service life of the us4R-lite™ device is 5 years under normal operating conditions as described in this manual.*
+*This estimation is based on internal testing and usage patterns. Proper maintenance, cleaning, and handling are essential* 
+*to achieve the stated service life. After the expected service life, continued use of the device may increase the risk of failure or reduced performance.*
 
 ## Cleaning and maintenance of the device
 
@@ -120,3 +126,6 @@ turn it on, but contact technical service.
 If the device will not be used over the course of two or more days, it
 should be cleaned and left protected from accidental damage, spillage or
 contamination at a safe location.
+If the device remains unused for more than one month, it is recommended 
+to store it in the transport case provided with the system, to ensure optimal protection 
+during extended periods of inactivity.

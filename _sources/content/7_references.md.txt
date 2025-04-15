@@ -109,6 +109,10 @@ General terms and conditions of sale are available [here](https://us4us.eu/asset
 * - **Ver. / Date**
   - **Author**
   - **Change description**
+* - 0.8 / 14 APR 2025
+  - BW
+  - 
+    - sections 3, 5.5, 5.6, and 6.2 updated
 * - 0.7 / 25 NOV 2024
   - BW
   - 
