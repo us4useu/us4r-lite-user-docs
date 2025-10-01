@@ -122,6 +122,7 @@ General terms and conditions of sale are available [here](https://us4us.eu/asset
   - 
     - Safety information clarified,
     - Probe adapter coding and example pinouts added.
+* - 0.8 / 14 APR 2025
   - BW
   - 
     - sections 3, 5.5, 5.6, and 6.2 updated
