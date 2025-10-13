@@ -13,6 +13,12 @@ myst:
       :width: 30px
       :align: center
       ```
+    electricshock_symbol: |
+      ```{image} img/electricshock2.png
+      :alt: emc
+      :width: 50px
+      :align: center
+      ```
     onoff_symbol: |
       ```{image} img/onoff.png
       :alt: onoff
@@ -74,6 +80,8 @@ myst:
   - Radiation/electromagnetic interference 
 * - {{warning_symbol}}   
   - CAUTION! Consult the instruction manual before use
+* - {{electricshock_symbol}}   
+  - CAUTION! possibility of electric shock; Probe connectors are hazardous live terminals. Use only with designated ultrasound probes. Do not touch connectors during operation.
 * - {{onoff_symbol}}
   - ON/OFF switch
 * - {{dc_19v_symbol}}
@@ -109,6 +117,11 @@ General terms and conditions of sale are available [here](https://us4us.eu/asset
 * - **Ver. / Date**
   - **Author**
   - **Change description**
+* - 0.9 / 9 SEP 2025
+  - BW
+  - 
+    - Safety information clarified,
+    - Probe adapter coding and example pinouts added.
 * - 0.8 / 14 APR 2025
   - BW
   - 

@@ -47,19 +47,21 @@ The table below summarizes all hardware models of the us4R-lite™:
 ## Ultrasound Probe Adapters
 
 Us4R-lite™ research system features changeable ultrasound probe adapter.
-Currently, we offer the following adapters:
+Depends on connector type, we offer the following adapters:
 
 :::{list-table} Probe adapters 
-   :widths: 20 20 20 50 40
+   :widths: 30 20 20 10 50 40
    :header-rows: 1
 
-*   - Connector <br>
-        Type
-    - Name
+*   - Part Number Scheme
+    - Connector <br>
+    Type
+    - Specific pinout
     - Rev
     - Supported Probes
     - List of tested probes
-*   - QLC-260
+*   - QLC-260-1-EPA
+    - QLC-260 
     - EPA
     - 3.0
     - ESAOTE compatible <br>
@@ -70,7 +72,17 @@ Currently, we offer the following adapters:
         - AL2442 linear-array
         - SP2430 phased-array
         - AC2541 convex-array
-*   - DL1-156
+*   - QLC-260-1-DRAM
+    - QLC-260
+    - DRAM
+    - 0.1
+    - Draminski compatible <br>
+    _up to 128-element probes <br>
+    (linear/array/convex)_
+    - 
+        - 10LA128DRA linear-array
+*   - DL1-156-1-PAU
+    - DL1-156
     - PAU
     - 1.0
     - ULTRASONIX compatible <br>
@@ -78,7 +90,8 @@ Currently, we offer the following adapters:
     - 
         - L14-5/38 linear-array
         - L9-4/38 linear-array
-*   - DL5-260
+*   - DL5-260-1-VPA
+    - DL5-260
     - VPA
     - 1.0
     - ATL / Philips compatible <br>
@@ -87,26 +100,50 @@ Currently, we offer the following adapters:
     - 
         - L7-4/38 linear-array
         - C5-2 convex-array
-*   - DLP-408
-    - DLPx
+*   - DLP-408-1-HYPGE <br>
+    /DLP-408-1-RCAV
+    - DLP-408
+    - HYPGE / RCAV
     - 2.0
     - GE compatible <br>
     RCA compatible <br>
-    _[up to 256-element probes (linear/array/convex/row-column)]_
+    _[up to 256-element probes (linear/array/convex/row-column)]_<br>
+    _in-probe MUX is not supported!_
     - 
         - GE L3-9i-D
         - RCA 128x128 & 64x64
-
 :::
 
+**Probe Adapter Part Number Scheme**
 
-If you cannot find the adapter that suits your application, it is possible to order a custom probe adapter from the us4us®. Please contact us at <support@us4us.eu> to discuss the options.
+To ensure clear identification and compatibility, all probe adapters for the us4R-lite™ system follow a standardized coding system:
 
+- ZZZ(Z)-ZZZ(Z) – Connector Type
+- Y – Number of connectors
+- XXX(XXXXX) – Specific connector pinout
+
+Connector Type (ZZZ(Z)-ZZZ(Z))
+Defines the mechanical connector type used in the adapter (e.g., QLC-260, DL1-156).
+
+Number of connectors (Y)
+Indicates how many connectors are implemented in the adapter.
+
+Pinout Specification (XXX(XXXXX))
+Identifies the detailed pinout configuration or mapping of the adapter, ensuring probe compatibility with the us4R-lite™ system.
+
+This convention allows users to quickly determine the connector type, number of connectors, and probe compatibility. 
+Only adapters that follow this coding scheme and are supplied or approved by us4us® should be used to maintain functional compatibility and safety compliance with IEC 61010-1.
+
+
+If you cannot find the adapter that suits your application, it is
+possible to order a custom probe adapter from the us4us®. Please contact
+us at <support@us4us.eu> to discuss the options.
 
 :::{Note}
 The system is supplied with one selected probe adapter. 
 Additional adapters can be purchased separately.
 :::
+
 
 (inputs-outputs)=
 ## Inputs and outputs
@@ -168,12 +205,15 @@ Using non-compatible or broken probes can result in damage to the transmission s
 Such damages are NOT covered under the warranty!
 ```
 (hardware/connecting-hostPC)=
-## Connecting the host PC
+## Connecting the host PC & display
 The **us4R-lite™** requires an external host PC (desktop / notebook) with a display to function correctly. The only way to connect the **us4R-lite™** device to the PC is through the PCIe or Thunderbolt cables (depending on the model).
 
 So far, it is required that the host PC be equipped with an NVIDIA GPU with CUDA Toolkit installed and, for PCIe connections, an available PCIe gen3 x16 (or x8, but open-ended) slot to install the provided PCIe host adapter card.
 
-
+**Safety and compatibility requirements:**
+To ensure safe and compliant operation, the following requirements apply when connecting the us4R-lite™ to an external PC:
+- the host PC must provide at least the same level of protection against electric shock as the us4R-lite™ system, i.e., Class II equipment (with double or reinforced insulation) according to IEC 61010-1,
+- Class I (with protective earth connection) according to IEC 61010-1.
 
 (hardware/pcie-ports)=
 ### PCIe interface
@@ -233,4 +273,9 @@ standard available on the SMA-type connectors:
 Back panel of the us4R-lite™, model RL-2024-PCIe showing the 4x digital I/O signals
 ```
 
+**Safety note:**
+The digital I/O signals (CLOCK IN, TRIG IN, CLOCK OUT, TRIG OUT) are classified as SELV (Safety Extra Low Voltage) circuits and operate at 3.3 V LVTTL logic levels.
+These connectors shall be connected only to equipment that provides SELV-compatible signals and meets at least the same protection against electric shock as the us4R-lite™ (minimum: Class II or Class I with protective earth).
+Applying voltages outside the specified 0–3.3 V range may damage the device and void compliance with IEC 61010-1.
 
+Do not connect these ports to mains-powered circuits, industrial I/O, or non-SELV signals.
