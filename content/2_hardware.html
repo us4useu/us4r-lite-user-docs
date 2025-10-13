@@ -53,7 +53,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#inputs-and-outputs">2.4. Inputs and outputs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#power-adapter-and-on-off-button">2.5. Power adapter and ON/OFF button</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#connecting-ultrasound-probes">2.6. Connecting ultrasound probes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#connecting-the-host-pc">2.7. Connecting the host PC</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#connecting-the-host-pc-display">2.7. Connecting the host PC &amp; display</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#pcie-interface">2.7.1. PCIe interface</a></li>
 </ul>
 </li>
@@ -147,27 +147,30 @@ An open-source ARRUS™ SDK (Software Development Kit) is provided to be install
 <section id="ultrasound-probe-adapters">
 <span id="hardware-probe-adapters"></span><h2><span class="section-number">2.3. </span>Ultrasound Probe Adapters<a class="headerlink" href="#ultrasound-probe-adapters" title="Permalink to this heading"></a></h2>
 <p>Us4R-lite™ research system features changeable ultrasound probe adapter.
-Currently, we offer the following adapters:</p>
+Depends on connector type, we offer the following adapters:</p>
 <table class="docutils align-default" id="id3">
 <caption><span class="caption-number">Table 2.2 </span><span class="caption-text">Probe adapters</span><a class="headerlink" href="#id3" title="Permalink to this table"></a></caption>
 <colgroup>
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 33%" />
-<col style="width: 27%" />
+<col style="width: 18%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 6%" />
+<col style="width: 29%" />
+<col style="width: 24%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p>Connector <br>
+<tr class="row-odd"><th class="head"><p>Part Number Scheme</p></th>
+<th class="head"><p>Connector <br>
 Type</p></th>
-<th class="head"><p>Name</p></th>
+<th class="head"><p>Specific pinout</p></th>
 <th class="head"><p>Rev</p></th>
 <th class="head"><p>Supported Probes</p></th>
 <th class="head"><p>List of tested probes</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>QLC-260</p></td>
+<tr class="row-even"><td><p>QLC-260-1-EPA</p></td>
+<td><p>QLC-260</p></td>
 <td><p>EPA</p></td>
 <td><p>3.0</p></td>
 <td><p>ESAOTE compatible <br>
@@ -181,7 +184,20 @@ Type</p></th>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><p>DL1-156</p></td>
+<tr class="row-odd"><td><p>QLC-260-1-DRAM</p></td>
+<td><p>QLC-260</p></td>
+<td><p>DRAM</p></td>
+<td><p>0.1</p></td>
+<td><p>Draminski compatible <br>
+<em>up to 128-element probes <br>
+(linear/array/convex)</em></p></td>
+<td><ul class="simple">
+<li><p>10LA128DRA linear-array</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>DL1-156-1-PAU</p></td>
+<td><p>DL1-156</p></td>
 <td><p>PAU</p></td>
 <td><p>1.0</p></td>
 <td><p>ULTRASONIX compatible <br>
@@ -192,7 +208,8 @@ Type</p></th>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><p>DL5-260</p></td>
+<tr class="row-odd"><td><p>DL5-260-1-VPA</p></td>
+<td><p>DL5-260</p></td>
 <td><p>VPA</p></td>
 <td><p>1.0</p></td>
 <td><p>ATL / Philips compatible <br>
@@ -204,12 +221,15 @@ Type</p></th>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><p>DLP-408</p></td>
-<td><p>DLPx</p></td>
+<tr class="row-even"><td><p>DLP-408-1-HYPGE <br>
+/DLP-408-1-RCAV</p></td>
+<td><p>DLP-408</p></td>
+<td><p>HYPGE / RCAV</p></td>
 <td><p>2.0</p></td>
 <td><p>GE compatible <br>
 RCA compatible <br>
-<em>[up to 256-element probes (linear/array/convex/row-column)]</em></p></td>
+<em>[up to 256-element probes (linear/array/convex/row-column)]</em><br>
+<em>in-probe MUX is not supported!</em></p></td>
 <td><ul class="simple">
 <li><p>GE L3-9i-D</p></li>
 <li><p>RCA 128x128 &amp; 64x64</p></li>
@@ -218,7 +238,24 @@ RCA compatible <br>
 </tr>
 </tbody>
 </table>
-<p>If you cannot find the adapter that suits your application, it is possible to order a custom probe adapter from the us4us®. Please contact us at <a class="reference external" href="mailto:support&#37;&#52;&#48;us4us&#46;eu">support<span>&#64;</span>us4us<span>&#46;</span>eu</a> to discuss the options.</p>
+<p><strong>Probe Adapter Part Number Scheme</strong></p>
+<p>To ensure clear identification and compatibility, all probe adapters for the us4R-lite™ system follow a standardized coding system:</p>
+<ul class="simple">
+<li><p>ZZZ(Z)-ZZZ(Z) – Connector Type</p></li>
+<li><p>Y – Number of connectors</p></li>
+<li><p>XXX(XXXXX) – Specific connector pinout</p></li>
+</ul>
+<p>Connector Type (ZZZ(Z)-ZZZ(Z))
+Defines the mechanical connector type used in the adapter (e.g., QLC-260, DL1-156).</p>
+<p>Number of connectors (Y)
+Indicates how many connectors are implemented in the adapter.</p>
+<p>Pinout Specification (XXX(XXXXX))
+Identifies the detailed pinout configuration or mapping of the adapter, ensuring probe compatibility with the us4R-lite™ system.</p>
+<p>This convention allows users to quickly determine the connector type, number of connectors, and probe compatibility.
+Only adapters that follow this coding scheme and are supplied or approved by us4us® should be used to maintain functional compatibility and safety compliance with IEC 61010-1.</p>
+<p>If you cannot find the adapter that suits your application, it is
+possible to order a custom probe adapter from the us4us®. Please contact
+us at <a class="reference external" href="mailto:support&#37;&#52;&#48;us4us&#46;eu">support<span>&#64;</span>us4us<span>&#46;</span>eu</a> to discuss the options.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The system is supplied with one selected probe adapter.
@@ -275,10 +312,16 @@ breakdown of the <strong>us4R-lite™</strong> transmit circuitry.
 Such damages are NOT covered under the warranty!</p>
 </div>
 </section>
-<section id="connecting-the-host-pc">
-<span id="hardware-connecting-hostpc"></span><h2><span class="section-number">2.7. </span>Connecting the host PC<a class="headerlink" href="#connecting-the-host-pc" title="Permalink to this heading"></a></h2>
+<section id="connecting-the-host-pc-display">
+<span id="hardware-connecting-hostpc"></span><h2><span class="section-number">2.7. </span>Connecting the host PC &amp; display<a class="headerlink" href="#connecting-the-host-pc-display" title="Permalink to this heading"></a></h2>
 <p>The <strong>us4R-lite™</strong> requires an external host PC (desktop / notebook) with a display to function correctly. The only way to connect the <strong>us4R-lite™</strong> device to the PC is through the PCIe or Thunderbolt cables (depending on the model).</p>
 <p>So far, it is required that the host PC be equipped with an NVIDIA GPU with CUDA Toolkit installed and, for PCIe connections, an available PCIe gen3 x16 (or x8, but open-ended) slot to install the provided PCIe host adapter card.</p>
+<p><strong>Safety and compatibility requirements:</strong>
+To ensure safe and compliant operation, the following requirements apply when connecting the us4R-lite™ to an external PC:</p>
+<ul class="simple">
+<li><p>the host PC must provide at least the same level of protection against electric shock as the us4R-lite™ system, i.e., Class II equipment (with double or reinforced insulation) according to IEC 61010-1,</p></li>
+<li><p>Class I (with protective earth connection) according to IEC 61010-1.</p></li>
+</ul>
 <section id="pcie-interface">
 <span id="hardware-pcie-ports"></span><h3><span class="section-number">2.7.1. </span>PCIe interface<a class="headerlink" href="#pcie-interface" title="Permalink to this heading"></a></h3>
 <p><strong>PCIe ports &amp; PCIe cables</strong> <br>
@@ -330,6 +373,11 @@ synchronize transmit events with other devices/systems.</p></li>
 <p><span class="caption-number">Fig. 2.9 </span><span class="caption-text">Back panel of the us4R-lite™, model RL-2024-PCIe showing the 4x digital I/O signals</span><a class="headerlink" href="#us4r-lite-pcie-back-io-rl-2024" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
+<p><strong>Safety note:</strong>
+The digital I/O signals (CLOCK IN, TRIG IN, CLOCK OUT, TRIG OUT) are classified as SELV (Safety Extra Low Voltage) circuits and operate at 3.3 V LVTTL logic levels.
+These connectors shall be connected only to equipment that provides SELV-compatible signals and meets at least the same protection against electric shock as the us4R-lite™ (minimum: Class II or Class I with protective earth).
+Applying voltages outside the specified 0–3.3 V range may damage the device and void compliance with IEC 61010-1.</p>
+<p>Do not connect these ports to mains-powered circuits, industrial I/O, or non-SELV signals.</p>
 </section>
 </section>
 
