@@ -274,7 +274,7 @@ Back panel of the us4R-lite™, model RL-2024-PCIe showing the 4x digital I/O si
 ```
 
 **Safety note:**
-The digital I/O signals (CLOCK IN, TRIG IN, CLOCK OUT, TRIG OUT) are classified as SELV (Safety Extra Low Voltage) circuits and operate at 3.3 V LVTTL logic levels.
+The digital I/O signals (CLOCK IN, TRIG IN, CLOCK OUT, TRIG OUT) are classified as SELV (Safety Extra Low Voltage) circuits and operate at 3.3 V (TRIG IN, TRIG OUT AND CLK IN) and 1.8V (CLK OUT) LVCMOS logic levels.
 These connectors shall be connected only to equipment that provides SELV-compatible signals and meets at least the same protection against electric shock as the us4R-lite™ (minimum: Class II or Class I with protective earth).
 Applying voltages outside the specified 0–3.3 V range may damage the device and void compliance with IEC 61010-1.
 
