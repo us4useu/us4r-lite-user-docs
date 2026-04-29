@@ -117,6 +117,10 @@ General terms and conditions of sale are available [here](https://us4us.eu/asset
 * - **Ver. / Date**
   - **Author**
   - **Change description**
+* - 1.0 / 29 APR 2026
+  - BW
+  - 
+    - Sections *2.8. Digital I/O ports* and *6.2. Technical data and Detailed specification* updated to correct previously misstated I/O voltage levels for selected trigger and CLK signals (3.3 V corrected to 1.8 V)
 * - 0.9 / 9 SEP 2025
   - BW
   - 
